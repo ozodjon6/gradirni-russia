@@ -1,0 +1,83 @@
+.header-page {
+  margin-bottom: 2rem;
+}
+
+.header-page__inner {
+    background: #0f2e53;
+    padding: 15px 0;
+    margin-bottom: 24px;
+}
+
+.header-page__item {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 5rem;
+  }
+
+  & svg {
+    margin-right: 1rem;
+  }
+
+  & .header-page__phone-number {
+    display: block;
+    font-family: $gilroy-bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  & .header-page__pochta {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  & span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+  }
+}
+
+.header-page__search {
+  width: 100%;
+  & .header-page__input {
+    width: inherit;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 13px 20px;
+    height: 5rem;
+    position: relative;
+    background-image: url(../../images/icons/search.svg);
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+
+    &::placeholder {
+      color: #c4c4c4;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+// navbar-list
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    & .navbar-list__item {
+
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+        & a {
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #000;
+            white-space: nowrap;
+        }
+    }
+}
