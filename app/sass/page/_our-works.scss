@@ -1,0 +1,29 @@
+.section-page.our-works {
+    padding-bottom: 5rem;
+    background: #F6FCFF;
+}
+
+.our-works__item {
+
+    & img {
+        margin-bottom: 2rem;
+    }
+
+    & .title {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    & .description {
+        margin-bottom: 2rem;
+        color: #888888;
+    }
+}
+
+.our-works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}

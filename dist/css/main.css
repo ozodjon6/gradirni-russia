@@ -47,6 +47,10 @@ h2 {
   font-size: 36px;
   line-height: 42px
 }
+h3 {
+  font-size: 24px;
+  line-height: 28px
+}
 ul {
   padding: 0;
   margin: 0
@@ -538,7 +542,8 @@ template {
   height: 60rem;
   background-position: center center;
   background-size: cover;
-  color: #fff
+  color: #fff;
+  margin-bottom: 5rem
 }
 .blue-page__heading {
   margin: 0 auto;
@@ -606,6 +611,225 @@ template {
   font-size: 18px;
   line-height: 21px
 }
+.services-slide {
+  color: #000;
+  margin-bottom: 5rem
+}
+.services-slide .splide__slide:not(:last-child) {
+  margin-right: 2rem
+}
+.services-slide .splide__arrow {
+  background-color: transparent;
+  height: 6rem;
+  width: 6rem
+}
+.services-slide .splide__arrow:disabled svg {
+  fill: #fff
+}
+.services-slide .splide__arrow svg {
+  fill: #e2ce19;
+  height: 4rem;
+  width: 4rem
+}
+.services-slide .splide__arrow--prev {
+  left: 25rem;
+  top: 80%
+}
+.services-slide .splide__arrow--next {
+  left: 35rem;
+  top: 80%
+}
+.services-slide__left {
+  background: #206bb0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  padding: 5rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.services-slide__left .services-slide__item {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left
+}
+.services-slide__left .services-slide__item:first-child {
+  margin-bottom: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 218px
+}
+.services-slide__left .services-slide__item:first-child span {
+  margin-right: auto
+}
+.services-slide__left .services-slide__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.services-slide__left .services-slide__item:last-child span {
+  max-width: 211px;
+  display: block;
+  margin-left: 2rem
+}
+.services-slide__right img {
+  width: 100%
+}
+.splide__pagination {
+  counter-reset: pagination-num
+}
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num)
+}
+.section-page.our-works {
+  padding-bottom: 5rem;
+  background: #f6fcff
+}
+.our-works__item img {
+  margin-bottom: 2rem
+}
+.our-works__item .title {
+  font-weight: 600;
+  text-align: center
+}
+.our-works__item .description {
+  margin-bottom: 2rem;
+  color: #888
+}
+.our-works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 160px
+}
+.section-page.list-block {
+  padding-bottom: 118px;
+  background: #f6fcff
+}
+.list-block__item {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 42px 42px 42px 90px;
+  margin: 0 auto;
+  width: 86%;
+  position: relative;
+  height: 100%;
+  -webkit-transition: background .2s ease;
+  -o-transition: background .2s ease;
+  transition: background .2s ease
+}
+.list-block__item::after {
+  content: '';
+  background-image: url(../images/img/quiz-list.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1
+}
+.list-block__item:hover {
+  cursor: pointer
+}
+.list-block__item:hover::after {
+  opacity: 1
+}
+.list-block__item:hover .title {
+  color: #fff;
+  z-index: 10;
+  font-weight: 600;
+  position: relative
+}
+.list-block__item:hover .list-block__item-content .text {
+  color: #e2ce19;
+  z-index: 10;
+  font-weight: 600;
+  position: relative
+}
+.list-block__item:hover .list-block__item-content svg {
+  color: #fff;
+  z-index: 10;
+  position: relative
+}
+.list-block__item .title {
+  margin-bottom: 1rem;
+  max-width: 30rem
+}
+.list-block__item .list-block__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.list-block__item .list-block__item-content .text {
+  color: #206bb0;
+  margin-right: 1rem
+}
+.list-block__item .list-block__item-content svg {
+  color: #206bb0
+}
+.list-block__item .list-block__item-icon {
+  position: absolute;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1);
+  box-shadow: 0 5px 5px rgba(0,0,0,.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 119px;
+  height: 119px;
+  border-radius: 50%;
+  left: -60px;
+  top: 10%;
+  z-index: 2
+}
 .section-page.tech-list {
   margin-bottom: 23px
 }
@@ -633,26 +857,26 @@ template {
   text-align: center;
   display: block
 }
-.splide__slide {
+.hero-slide .splide__slide {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 70rem
 }
-.splide__slide:nth-child(1) {
-  background-image: url(../../images/img/hero-1.jpg)
-}
-.splide__slide:nth-child(2) {
-  background-image: url(../../images/img/hero-2.jpg)
-}
-.splide__slide:nth-child(3) {
-  background-image: url(../../images/img/hero-4.jpg)
-}
-.splide__slide .container {
+.hero-slide .splide__slide .container {
   height: 100%
 }
-.splide__info {
+.hero-slide .splide__slide:nth-child(1) {
+  background-image: url(../images/img/hero-1.jpg)
+}
+.hero-slide .splide__slide:nth-child(2) {
+  background-image: url(../images/img/hero-2.jpg)
+}
+.hero-slide .splide__slide:nth-child(3) {
+  background-image: url(../images/img/hero-4.jpg)
+}
+.hero-slide .splide__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +894,7 @@ template {
   margin-left: 72px;
   color: #fff
 }
-.splide__info .title {
+.hero-slide .splide__info .title {
   font-size: 36px;
   line-height: 42px;
   max-width: 460px;
@@ -678,7 +902,7 @@ template {
   margin-bottom: 4rem;
   position: relative
 }
-.splide__info .title::after {
+.hero-slide .splide__info .title::after {
   content: "";
   position: absolute;
   width: 50%;
@@ -687,17 +911,32 @@ template {
   left: 0;
   bottom: -20px
 }
-.splide__info .description {
+.hero-slide .splide__info .description {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 5rem
 }
-.splide__info .btn {
+.hero-slide .splide__arrows .splide__arrow {
+  background-color: transparent
+}
+.hero-slide .splide__arrows .splide__arrow svg {
+  fill: #e2ce19;
+  width: 2rem;
+  height: 2rem
+}
+.hero-slide .splide__arrows .splide__arrow--prev {
+  left: 8%
+}
+.hero-slide .splide__arrows .splide__arrow--next {
+  right: 8%
+}
+.btn {
   background: #206bb0;
   border-radius: 10px;
   height: 5rem;
   text-transform: uppercase;
   min-width: 209px;
+  max-width: 209px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,19 +947,21 @@ template {
   -ms-flex-pack: center;
   justify-content: center
 }
-.splide__arrows .splide__arrow {
-  background-color: transparent
+.btn.btn_white {
+  -webkit-box-shadow: inset 0 0 0 1px #206bb0;
+  box-shadow: inset 0 0 0 1px #206bb0;
+  background-color: transparent;
+  color: #206bb0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
-.splide__arrows .splide__arrow svg {
-  fill: #e2ce19;
-  width: 2rem;
-  height: 2rem
-}
-.splide__arrows .splide__arrow--prev {
-  left: 17.2%
-}
-.splide__arrows .splide__arrow--next {
-  right: 17.2%
+.btn.btn_white:hover {
+  cursor: pointer;
+  background: #206bb0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff
 }
 .garant-info__content .title {
   font-size: 36px;
