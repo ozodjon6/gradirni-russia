@@ -26,10 +26,12 @@
         bottom: 0;
         left: 0;
         z-index: 1;
+        transition: background 0.9s ease;
     }
 
     &:hover {
         cursor: pointer;
+        // background: url(../images/img/quiz-list.png) center center no-repeat;
     }
 
     &:hover::after {

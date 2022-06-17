@@ -174,3 +174,34 @@
         }
     }
 }
+
+.section-page.news-page {
+    padding-top: 5rem;
+}
+
+.youtube-chanel {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    & .title {
+        font-weight: 600;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.youtube-block {
+    background: url(../../images/img/background-youtube.jpg) center center no-repeat;
+    margin-bottom: 5rem;
+    min-height: 166px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    & a {
+        color: #FFFFFF;
+        display: block;
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+}

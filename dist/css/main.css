@@ -533,6 +533,29 @@ template {
   max-width: 100%;
   max-height: 100%
 }
+.footer-page__articles {
+  background: #f3f3f3;
+  position: relative;
+  height: 70vh;
+  padding: 5rem 0
+}
+.footer-page__articles .container {
+  position: relative;
+  z-index: 10
+}
+.footer-page__articles .container .title {
+  font-weight: 600
+}
+.footer-page__articles::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../../images/img/factory-img.png) top left no-repeat;
+  width: 100%;
+  height: inherit;
+  z-index: 1
+}
 .section-page.blue-page {
   padding: 62px 0;
   background: url(../images/img/blue-page.jpg),-o-linear-gradient(185.51deg,#235481 0,#0f2e53 99.52%);
@@ -734,7 +757,7 @@ template {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 160px
+  min-height: 160px
 }
 .section-page.list-block {
   padding-bottom: 118px;
@@ -765,7 +788,10 @@ template {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1
+  z-index: 1;
+  -webkit-transition: background .9s ease;
+  -o-transition: background .9s ease;
+  transition: background .9s ease
 }
 .list-block__item:hover {
   cursor: pointer
@@ -1000,5 +1026,39 @@ template {
 .content-list .content-list__item span {
   line-height: 26px;
   color: #000
+}
+.section-page.news-page {
+  padding-top: 5rem
+}
+.youtube-chanel {
+  margin-top: 5rem;
+  margin-bottom: 2rem
+}
+.youtube-chanel .title {
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center
+}
+.youtube-block {
+  background: url(../../images/img/background-youtube.jpg) center center no-repeat;
+  margin-bottom: 5rem;
+  min-height: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem
+}
+.youtube-block a {
+  color: #fff;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: underline
 }
 /*# sourceMappingURL=app/css/main.css.map */
