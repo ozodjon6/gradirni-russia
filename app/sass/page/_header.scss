@@ -8,6 +8,12 @@
     margin-bottom: 24px;
 }
 
+.header-page__bottom {
+  & .site-logo {
+    display: inline-block;
+  }
+}
+
 .header-page__item {
   display: flex;
   align-items: center;
