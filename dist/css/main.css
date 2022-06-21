@@ -1013,16 +1013,6 @@ template {
   text-align: center;
   display: block
 }
-.hero-slide .splide__slide {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 70rem
-}
-.hero-slide .splide__slide .container {
-  height: 100%
-}
 .hero-slide .splide__slide:nth-child(1) {
   background-image: url(../images/img/hero-1.jpg)
 }
@@ -1031,6 +1021,17 @@ template {
 }
 .hero-slide .splide__slide:nth-child(3) {
   background-image: url(../images/img/hero-4.jpg)
+}
+.hero-slide .splide__slide {
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 70rem
+}
+.hero-slide .splide__slide .container {
+  height: 100%
 }
 .hero-slide .splide__info {
   display: -webkit-box;
@@ -1172,7 +1173,36 @@ template {
   color: #000
 }
 .section-page.news-page {
-  padding-top: 5rem
+  padding-bottom: 117px;
+  margin-bottom: 0
+}
+.news-page .splide__arrows {
+  display: none
+}
+.news-page .splide__pagination {
+  counter-reset: pagination-num;
+  top: 100%;
+  margin-top: 5rem
+}
+.news-page .splide__pagination li {
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 2rem
+}
+.news-page .splide__pagination li .splide__pagination__page:not(.is-active) {
+  background-color: transparent
+}
+.news-page .splide__pagination li .splide__pagination__page.is-active {
+  background: #206bb0;
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  margin: 0
+}
+.news-page .splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num)
 }
 .youtube-chanel {
   margin-top: 5rem;
@@ -1235,7 +1265,7 @@ template {
   height: 100%
 }
 .specialist__item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 309px;
   height: 309px;
@@ -1418,5 +1448,38 @@ template {
 }
 .catalog-tab__info .catalog-tab__info-content .catalog-tab__info-model {
   margin-bottom: 2rem
+}
+.scale-slide__inner .splide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.scale-slide__inner .splide__slide {
+  border-radius: 10px;
+  width: 328px;
+  height: 200px
+}
+.scale-slide__inner .splide__slide:not(.is-active) {
+  -webkit-transform: scale(.5);
+  -ms-transform: scale(.5);
+  transform: scale(.5);
+  background: #eee
+}
+.scale-slide__inner .splide__slide.is-active {
+  background: #c4c4c4
+}
+.scale-slide__inner .splide__slide.is-next,
+.scale-slide__inner .splide__slide.is-prev {
+  background: #ddd
+}
+.scale-slide__inner .splide__arrows,
+.scale-slide__inner .splide__pagination {
+  display: none
 }
 /*# sourceMappingURL=app/css/main.css.map */

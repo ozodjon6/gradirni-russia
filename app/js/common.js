@@ -3,9 +3,7 @@
     let elems = document.getElementsByClassName('splide');
 
     for(let i = 0; i < elems.length; i++) {
-        new Splide(elems[i], {
-            
-        }).mount();
+        new Splide(elems[i], {}).mount();
     }
 
 })();
@@ -25,3 +23,12 @@
       });
 
 })();
+
+function parallax(selector){
+  var scrolled = $(window).scrollTop();
+  $(selector).css('background-position',"0 "+  (scrolled * 0.7) + 'px');
+}
+
+$(window).scroll(function(e){
+  parallax('.hero-slide .splide__slide');
+});
