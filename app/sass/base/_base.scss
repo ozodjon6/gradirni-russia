@@ -29,6 +29,22 @@ h6 {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -75,6 +91,12 @@ input {
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    color: #C4C4C4;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 img {
@@ -91,9 +113,11 @@ body {
 
 body {
   font-size: 16px;
-  font-family: 'gilroy-regular', sans-serif;
+  font-family: $gilroy-regular, sans-serif;
   // background-color: #000000;
   color: #000;
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 400;
 }
 
@@ -110,6 +134,7 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px;
+    width: 95%;
     padding-right: 15px;
     padding-left: 15px;
   }

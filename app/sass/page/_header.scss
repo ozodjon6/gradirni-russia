@@ -8,6 +8,12 @@
     margin-bottom: 24px;
 }
 
+.header-page__bottom {
+  & .site-logo {
+    display: inline-block;
+  }
+}
+
 .header-page__item {
   display: flex;
   align-items: center;
@@ -67,6 +73,7 @@
 .navbar-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     & .navbar-list__item {
 
         &:not(:last-child) {
@@ -78,6 +85,11 @@
             text-transform: uppercase;
             color: #000;
             white-space: nowrap;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: #206BB0;
+            }
         }
     }
 }

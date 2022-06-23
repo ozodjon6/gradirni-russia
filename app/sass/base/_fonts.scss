@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'gilroy-bold';
+    font-family: 'gilroybold';
     src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
          url('../fonts/gilroy-bold-webfont.woff') format('woff');
     font-weight: 600;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'gilroy-medium';
+    font-family: 'gilroymedium';
     src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
          url('../fonts/gilroy-medium-webfont.woff') format('woff');
     font-weight: 400;
@@ -16,7 +16,7 @@
 
 }
 @font-face {
-    font-family: 'gilroy-regular';
+    font-family: 'gilroyregular';
     src: url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
          url('../fonts/gilroy-regular-webfont.woff') format('woff');
     font-weight: 400;
@@ -24,6 +24,6 @@
 
 }
 
-$gilroy-bold: 'gilroy-bold';
-$gilroy-regular: 'gilroy-regular';
-$gilroy-medium: 'gilroy-medium';
+$gilroy-bold: 'gilroybold';
+$gilroy-regular: 'gilroyregular';
+$gilroy-medium: 'gilroymedium';
