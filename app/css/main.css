@@ -1387,11 +1387,11 @@ template {
   line-height: 26px;
   color: #206bb0
 }
-.tab-content {
+.catalog-tab .tab-content {
   height: 100%;
   width: 100%
 }
-.tab-content .tab-pane.active {
+.catalog-tab .tab-content .tab-pane.active {
   background: #efefef;
   border-radius: 10px;
   display: -webkit-box;
@@ -1405,7 +1405,7 @@ template {
   justify-content: space-between;
   height: 100%
 }
-.tab-content .tab-pane__left {
+.catalog-tab .tab-content .tab-pane__left {
   background-color: #c4c4c4;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1423,18 +1423,18 @@ template {
   justify-content: center;
   width: 50%
 }
-.tab-content .tab-pane__right {
+.catalog-tab .tab-content .tab-pane__right {
   background-color: #efefef;
   padding: 45px 40px;
   border-radius: 10px;
   width: 50%;
   height: inherit
 }
-.tab-content .tab-pane__right .tab-pane__right-item span,
-.tab-content .tab-pane__right .tab-pane__right-item strong {
+.catalog-tab .tab-content .tab-pane__right .tab-pane__right-item span,
+.catalog-tab .tab-content .tab-pane__right .tab-pane__right-item strong {
   display: block
 }
-.tab-content .tab-pane__right .tab-pane__right-item:first-child {
+.catalog-tab .tab-content .tab-pane__right .tab-pane__right-item:first-child {
   margin-bottom: 3rem
 }
 .catalog-tab__info .catalog-tab__heading {
@@ -1583,5 +1583,48 @@ template {
   color: #8e8e8e;
   font-size: 12px;
   line-height: 14px
+}
+.catalog-tab-child .catalog-tab__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  max-width: 804px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #c4c4c4
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item {
+  position: relative
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 3px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item:not(:last-child) {
+  margin-bottom: 0
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item a {
+  color: #aeaeae
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item.active::after {
+  background-color: #222b6c
+}
+.catalog-tab-child .catalog-tab__list .catalog-tab__item.active a {
+  color: #222b6c
 }
 /*# sourceMappingURL=app/css/main.css.map */

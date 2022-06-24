@@ -31,7 +31,7 @@ function browsersync() {
 			baseDir: 'app/',
 			middleware: bssi({ baseDir: 'app/', ext: '.html' })
 		},
-		tunnel: 'new-safenetpay', // Attempt to use the URL https://new-safenetpay.loca.lt
+		// tunnel: 'new-safenetpay', // Attempt to use the URL https://new-safenetpay.loca.lt
 		notify: false,
 		online: true
 	})
