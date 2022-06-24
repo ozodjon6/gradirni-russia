@@ -1292,7 +1292,7 @@ template {
   margin-bottom: 1rem
 }
 .request-page__inner {
-  background: url(../../images/img/hero-4.jpg) center center no-repeat;
+  background: url(../images/img/hero-4.jpg) center center no-repeat;
   height: 30rem;
   width: 100%;
   border-radius: 10px;
@@ -1626,5 +1626,42 @@ template {
 }
 .catalog-tab-child .catalog-tab__list .catalog-tab__item.active a {
   color: #222b6c
+}
+.certificats-page .swiper-slide {
+  background: #c4c4c4;
+  border-radius: 10px;
+  width: 328px;
+  height: 40rem;
+  margin-right: 3rem
+}
+.certificats-page .swiper-wrapper__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 3rem
+}
+.certificats-page .swiper-wrapper__arrows .swiper-button-next,
+.certificats-page .swiper-wrapper__arrows .swiper-button-prev {
+  position: unset;
+  margin-top: 0;
+  color: #113cfc
+}
+.certificats-page .swiper-wrapper__arrows .swiper-button-prev {
+  margin-right: 4rem
+}
+.certificats-page .swiper-wrapper__arrows .swiper-button-disabled {
+  color: #222b6c
+}
+.complate-page .complate-page__item span {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2rem
 }
 /*# sourceMappingURL=app/css/main.css.map */

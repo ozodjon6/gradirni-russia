@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General</title>
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="">
+    <div id="root">
+      <div class="outer-wrapper">
+        <div class="wrapper">
+          <!--#include virtual="parts/header.html" -->
+          <main class="main-page">
+            <section class="section-page">
+              <div class="container">
+                <!--#include virtual="parts/tech-list.html" -->
+              </div>
+            </section>
+            <section class="section-page certificats-page">
+              <div class="container">
+                <!-- <div class="splide" data-splide='{"type":"loop","perPage":4}' rewind: boolean = false>
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                      </li>
+                      <li class="splide__slide">
+                      </li>
+                      <li class="splide__slide">
+                      </li>
+                      <li class="splide__slide">
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                  </div>
+                  <div class="swiper-wrapper__arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section-page request-page">
+              <div class="container">
+                <!--#include virtual="parts/request-page.html" -->
+              </div>
+            </section>
+          </main>
+        </div>
+        <footer class="footer-page">
+          <!--#include virtual="parts/footer.html" -->
+        </footer>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/splide.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/common.js"></script>
+</html>

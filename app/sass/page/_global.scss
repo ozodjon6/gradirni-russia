@@ -321,7 +321,7 @@
 // request-page__inner
 
 .request-page__inner {
-  background: url(../../images/img/hero-4.jpg) center center no-repeat;
+  background: url(../images/img/hero-4.jpg) center center no-repeat;
   height: 30rem;
   width: 100%;
   border-radius: 10px;
@@ -665,6 +665,57 @@
     }
     & .catalog-tab__item.active a {
       color: #222B6C;
+    }
+  }
+}
+
+//certificats-page
+// .section-page.certificats-page {
+//   padding-bottom: 122px;
+// }
+
+.certificats-page {
+  & .swiper-slide {
+    background: #C4C4C4;
+    border-radius: 10px;
+    width: 328px;
+    height: 40rem;
+    margin-right: 3rem;
+  }
+
+  & .swiper-wrapper__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+    & .swiper-button-next, 
+    & .swiper-button-prev {
+      position: unset;
+      margin-top: 0;
+      color: #113CFC;
+    }
+    & .swiper-button-prev {
+      margin-right: 4rem;
+    }
+
+    & .swiper-button-disabled {
+      color: #222B6C;
+    }
+
+  }
+
+}
+
+// complate-page
+
+.complate-page {
+  & .complate-page__item {
+    & span {
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 2rem;
     }
   }
 }
