@@ -31,11 +31,34 @@ $(window).scroll(function (e) {
 
 // swiper
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+(function(){
+
+  try {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }catch {
+    console.log()
+  }
+
+})();
+
+(function(){
+
+  try {
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      cssMode: true,
+      mousewheel: true,
+      centeredSlides: true,
+    });
+  }catch {
+    console.log()
+  }
+
+})();

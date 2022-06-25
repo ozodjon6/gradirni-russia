@@ -1,6 +1,11 @@
 .section-page.our-works {
-    padding-bottom: 5rem;
     background: #F6FCFF;
+    margin-bottom: 0;
+
+    & .container {
+        border-bottom: 1px solid #E5F0F5;
+        padding-bottom: 5rem;
+    }
 }
 
 .our-works__item {
