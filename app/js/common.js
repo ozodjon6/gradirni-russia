@@ -51,11 +51,8 @@ $(window).scroll(function (e) {
 (function(){
 
   try {
-    let swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".scale-slide__wrapper", {
       slidesPerView: 3,
-      cssMode: true,
-      mousewheel: true,
-      centeredSlides: true,
     });
   }catch {
     console.log()
