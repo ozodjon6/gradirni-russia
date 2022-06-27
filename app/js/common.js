@@ -59,3 +59,16 @@ $(window).scroll(function (e) {
   }
 
 })();
+
+// counter
+
+(function(){
+
+  try {
+    let addBtn = document.querySelector('.add');
+    let removeBtn = document.querySelector('.add');
+  }catch {
+    console.log()
+  }
+
+})();

@@ -31,6 +31,10 @@
 }
 
 .info-list__item {
+
+  & svg {
+    color: #E2CE19;
+  }
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -50,6 +54,20 @@
 
   & .text-bold {
     font-family: $gilroy-bold;
+  }
+
+  & .info-list__item-call {
+    & a {
+      display: block;
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &:last-child {
+    display: flex;
+    align-items: flex-start;
   }
 }
 

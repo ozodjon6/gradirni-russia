@@ -98,7 +98,7 @@
               <a href="./certificats.html">Сертификаты</a>
             </li>
             <li class="navbar-list__item">
-              <a href="">Контакты</a>
+              <a href="./contact.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -161,9 +161,9 @@
                         <div class="catalog-info__item">
                           <h3 class="title title_red">Цена по запросу</h3>
                           <div class="catalog-info__item-counter">
-                            <span>+</span>
+                            <span class="add">+</span>
                             <button class="counter">1</button>
-                            <span>-</span>
+                            <span class="remove">-</span>
                           </div>
                         </div>
                         <div class="catalog-info__item">
@@ -254,17 +254,15 @@
             <section class="section-page scale-slide">
               <div class="container">
                 <div class="scale-slide__inner">
-  <div class="swiper scale-slide__wrapper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+  <div class="splide" data-splide='{"perPage": "5", "focus": "center", "type": "loop"}'>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Slide 01</li>
+        <li class="splide__slide">Slide 02</li>
+        <li class="splide__slide">Slide 03</li>
+        <li class="splide__slide">Slide 04</li>
+        <li class="splide__slide">Slide 05</li>
+      </ul>
     </div>
   </div>
 </div>
