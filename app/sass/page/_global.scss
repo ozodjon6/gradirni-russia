@@ -723,11 +723,27 @@
 
 .complate-page {
   & .complate-page__item {
+      color: #000;
+      display: block;
     & span {
       text-align: center;
       text-transform: uppercase;
       display: block;
       margin-top: 2rem;
+    }
+  }
+}
+
+.complate-page-child {
+  & .title {
+    color: #222B6C;
+  }
+  & span {
+    font-size: 14px;
+    line-height: 16px;
+
+    &.active {
+      color: #222B6C;
     }
   }
 }

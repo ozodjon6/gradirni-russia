@@ -443,6 +443,9 @@ template {
 .navbar-list .navbar-list__item a:hover {
   color: #206bb0
 }
+.navbar-list.navbar-list__item.active {
+  color: #206bb0
+}
 .footer-page {
   background: #0f2e53
 }
@@ -1987,11 +1990,25 @@ template {
 .certificats-page .swiper-wrapper__arrows .swiper-button-disabled {
   color: #222b6c
 }
+.complate-page .complate-page__item {
+  color: #000;
+  display: block
+}
 .complate-page .complate-page__item span {
   text-align: center;
   text-transform: uppercase;
   display: block;
   margin-top: 2rem
+}
+.complate-page-child .title {
+  color: #222b6c
+}
+.complate-page-child span {
+  font-size: 14px;
+  line-height: 16px
+}
+.complate-page-child span.active {
+  color: #222b6c
 }
 .vertical-slide .vertical-slide__left .title {
   max-width: 330px;
