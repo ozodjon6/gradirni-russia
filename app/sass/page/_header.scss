@@ -96,3 +96,18 @@
       color: #206BB0;
     }
 }
+
+// hero-slide
+
+.hero-slide {
+  & .splide__pagination {
+    & .splide__pagination__page {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+    & .splide__pagination__page.is-active {
+      background-color: #E2CE19;
+      box-shadow: inset 0 0 0 1px #E2CE19;
+    }
+  }
+}
