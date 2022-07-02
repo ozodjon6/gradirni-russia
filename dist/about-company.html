@@ -18,7 +18,7 @@
   <div class="header-page__inner">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-none d-xxl-flex align-items-center">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#phone"></use>
@@ -36,7 +36,7 @@
             >
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-xxl-4 d-none d-lg-flex">
           <div class="header-page__search">
             <input
               type="text"
@@ -45,7 +45,7 @@
             />
           </div>
         </div>
-        <div class="col-md-4 d-flex align-items-center justify-content-md-end">
+        <div class="col-sm-6 col-xxl-4 d-flex align-items-center justify-content-lg-end">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#person"></use>
@@ -59,21 +59,25 @@
             <span>Опросные листы</span>
           </div>
         </div>
+        <div class="col-sm-6 d-lg-none">
+          <div class="site-hamburger d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="header-page__bottom">
     <div class="container">
-      <div class="row align-items-center justify-content-sm-between">
-        <div class="col-md-3">
-          <!-- <svg width="303" height="66">
-            <use xlink:href="images/icons/sprite.svg#logo"></use>
-          </svg> -->
+      <div class="row align-items-center justify-content-sm-between flex-wrap">
+        <div class="col-sm-6 col-md-3">
           <a href="./index.html" class="site-logo">
             <img src="images/img/logo.svg" alt="">
           </a>
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-6 col-md-9">
           <ul class="navbar-list">
             <li class="navbar-list__item">
               <a href="./about-company.html">О компании</a>
@@ -97,6 +101,18 @@
               <a href="./contact.html">Контакты</a>
             </li>
           </ul>
+          <div class="site-hamburger d-none d-lg-flex d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+          <div class="header-page__search d-lg-none">
+            <input
+              type="text"
+              class="header-page__input"
+              placeholder="Поиск по сайту"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -107,7 +123,7 @@
             <section class="section-page tech-list">
               <div class="container">
                 <div class="row">
-    <div class="col-2">
+    <div class="col-2 pl-0">
         <div class="tech-list__item">
             <img src="images/img/gradian-1.png" alt="">
             <span>Строительные вентиляторные градирни</span>
@@ -116,31 +132,36 @@
     <div class="col-2">
         <div class="tech-list__item">
             <img src="images/img/gradian-2.png" alt="">
-            <span>Строительные вентиляторные градирни</span>
+            <span>Градирни
+                модульного типа</span>
         </div>
     </div>
     <div class="col-2">
         <div class="tech-list__item">
             <img src="images/img/gradian-3.png" alt="">
-            <span>Строительные вентиляторные градирни</span>
+            <span>Градирни
+                гибридного типа</span>
         </div>
     </div>
     <div class="col-2">
         <div class="tech-list__item">
             <img src="images/img/gradian-4.png" alt="">
-            <span>Строительные вентиляторные градирни</span>
+            <span>Градирни с естественной
+                тягой башенные</span>
         </div>
     </div>
     <div class="col-2">
         <div class="tech-list__item">
             <img src="images/img/gradian-5.png" alt="">
-            <span>Строительные вентиляторные градирни</span>
+            <span>Комплексные
+                поставки БОВ</span>
         </div>
     </div>
     <div class="col-2">
         <div class="tech-list__item">
             <img src="images/img/gradian-6.png" alt="">
-            <span>Строительные вентиляторные градирни</span>
+            <span>Градирни
+                модульного типа</span>
         </div>
     </div>
 </div>
@@ -277,67 +298,48 @@
             </section>
             <section class="section-page services-slide">
               <div class="container">
-                <div class="splide">
-    <div class="splide__track">
-          <ul class="splide__list">
-              <li class="splide__slide">
                 <div class="row">
-                    <div class="col-md-4 px-0">
-                        <div class="services-slide__left">
-                            <div class="services-slide__item">
-                                <h2 class="title">Наши услуги</h2>
-                                <span class="description">и как мы работаем ?</span>
-                            </div>
-                            <div class="services-slide__item d-flex align-items-center">
-                                <img src="/images/icons/gradiren.svg" alt="">
-                                <span class="description">Обследование и технологические испытания градирен и БОВ</span>
-                            </div>
-                            <div class="services-slide__item">
-                                01
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 px-0">
-                        <div class="services-slide__right">
-                            <img src="images/img/services-img.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="row">
-                    <div class="col-md-4 px-0">
-                        <div class="services-slide__left">
-                            <div class="services-slide__item">
-                                <h2 class="title">Наши услуги 2</h2>
-                                <span class="description">и как мы работаем ?</span>
-                            </div>
-                            <div class="services-slide__item d-flex align-items-center">
-                                <img src="/images/icons/gradiren.svg" alt="">
-                                <span class="description">Обследование и технологические испытания градирен и БОВ</span>
-                            </div>
-                            <div class="services-slide__item">
-                                02
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 px-0">
-                        <div class="services-slide__right">
-                            <img src="images/img/services-img.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-              </li>
-          </ul>
+    <div class="col-md-4 px-0">
+        <div class="services-slide__left">
+            <div class="services-slide__item">
+                <h2 class="title">Наши услуги</h2>
+                <span class="description">и как мы работаем ?</span>
+            </div>
+            <div class="services-slide__item d-flex align-items-center">
+                <img src="./images/icons/gradiren.svg" alt="">
+                <span class="description">Обследование и технологические испытания градирен и БОВ</span>
+            </div>
+            <div class="services-slide__item">
+                01
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="col-md-8 px-0">
+        <div class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="services-slide__right">
+                            <img src="./images/img/services-img.jpg" alt="">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="services-slide__right">
+                            <img src="./images/img/services-img.jpg" alt="">
+                        </div>
+                      </li>
+                  </ul>
+            </div>
+          </div>
+    </div>
+</div>
               </div>
             </section>
             <section class="section-page our-works our-works_company-page">
               <div class="container">
                 <div class="row mb-5">
     <div class="col-md-6">
-        <h2 class="title">Наши работы</h2>
+        <h2 class="title mb-md-3">Наши работы</h2>
         <span class="description">профессиональный и идивидальные</span>
     </div>
     <div class="col-md-6 d-flex justify-content-md-end">
@@ -460,7 +462,7 @@
       </div>
       <div class="row">
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-1.jpg" alt="" />
             </div>
@@ -471,10 +473,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-2.jpg" alt="" />
             </div>
@@ -485,10 +487,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-3.jpg" alt="" />
             </div>
@@ -499,10 +501,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-4.jpg" alt="" />
             </div>
@@ -513,15 +515,15 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="footer-page__certificates">
         <div class="certificates-left">
           <h2 class="title">Сертификаты качества</h2>
-          <div class="certificates-left__item"></div>
-          <div class="certificates-left__item"></div>
-          <div class="certificates-left__item"></div>
+          <a href="./certificats.html" class="certificates-left__item"></a>
+          <a href="./certificats.html" class="certificates-left__item"></a>
+          <a href="./certificats.html" class="certificates-left__item"></a>
         </div>
         <div class="certificates-right">
           <h2 class="title">Каталог оборудование</h2>

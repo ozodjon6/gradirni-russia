@@ -31,8 +31,7 @@ $(window).scroll(function (e) {
 
 // swiper
 
-(function(){
-
+(function () {
   try {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
@@ -42,33 +41,33 @@ $(window).scroll(function (e) {
         prevEl: ".swiper-button-prev",
       },
     });
-  }catch {
-    console.log()
+  } catch {
+    console.log();
   }
-
 })();
 
-(function(){
-
+(function () {
   try {
     let swiper = new Swiper(".scale-slide__wrapper", {
       slidesPerView: 3,
     });
-  }catch {
-    console.log()
+  } catch {
+    console.log();
   }
-
 })();
 
 // counter
 
-(function(){
-
-  try {
-    let addBtn = document.querySelector('.add');
-    let removeBtn = document.querySelector('.add');
-  }catch {
-    console.log()
+$(document).on("click", ".qty__btn_decr, .qty__btn_incr", function (e) {
+  e.preventDefault();
+  var input = $(this).closest(".qty__inner").find("input");
+  if ($(this).hasClass("qty__btn_decr")) {
+    var new_val = parseInt(input.val()) - 1;
+  }
+  else if ($(this).hasClass("qty__btn_incr")) {
+    var new_val = parseInt(input.val()) + 1;
   }
 
-})();
+  if (new_val <= 0) new_val = 1;
+  $(this).closest(".qty__inner").find("input").val(new_val).trigger("change");
+});

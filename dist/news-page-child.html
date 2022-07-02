@@ -18,7 +18,7 @@
   <div class="header-page__inner">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-none d-xxl-flex align-items-center">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#phone"></use>
@@ -36,7 +36,7 @@
             >
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-xxl-4 d-none d-lg-flex">
           <div class="header-page__search">
             <input
               type="text"
@@ -45,7 +45,7 @@
             />
           </div>
         </div>
-        <div class="col-md-4 d-flex align-items-center justify-content-md-end">
+        <div class="col-sm-6 col-xxl-4 d-flex align-items-center justify-content-lg-end">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#person"></use>
@@ -59,21 +59,25 @@
             <span>Опросные листы</span>
           </div>
         </div>
+        <div class="col-sm-6 d-lg-none">
+          <div class="site-hamburger d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="header-page__bottom">
     <div class="container">
-      <div class="row align-items-center justify-content-sm-between">
-        <div class="col-md-3">
-          <!-- <svg width="303" height="66">
-            <use xlink:href="images/icons/sprite.svg#logo"></use>
-          </svg> -->
+      <div class="row align-items-center justify-content-sm-between flex-wrap">
+        <div class="col-sm-6 col-md-3">
           <a href="./index.html" class="site-logo">
             <img src="images/img/logo.svg" alt="">
           </a>
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-6 col-md-9">
           <ul class="navbar-list">
             <li class="navbar-list__item">
               <a href="./about-company.html">О компании</a>
@@ -97,6 +101,18 @@
               <a href="./contact.html">Контакты</a>
             </li>
           </ul>
+          <div class="site-hamburger d-none d-lg-flex d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+          <div class="header-page__search d-lg-none">
+            <input
+              type="text"
+              class="header-page__input"
+              placeholder="Поиск по сайту"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -142,87 +158,48 @@
             </section>
             <section class="section-page vertical-slide">
               <div class="container">
-                <div class="splide" data-splide='{"direction": "ttb", "height": "30rem"}'>
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <li class="splide__slide">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="vertical-slide__left">
-                              <h3 class="title">Воскресенские минеральные удобрения</h3>
-                              <div class="vertical-slide__left-content">
-                                <span>09.04.2022</span>
-                                <p class="description">
-                                  В 2014 компания "Cenk Endüstri Tesisleri İmalat Ve
-                                  Taahhüt A.Ş", дочерней компанией которой является
-                                  "Ченк Рус", завершила строительство градирни серии KMF
-                                  40 для компании "Asil Çelik" в г. Бурса, Турция.
-                                  Проект выполнен "под ключ", начиная со стадии
-                                  разработки объекта до сдачи в эксплуатацию.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="vertical-slide__left">
+                      <h3 class="title">Воскресенские минеральные удобрения</h3>
+                      <div class="vertical-slide__left-content">
+                        <span>09.04.2022</span>
+                        <p class="description">
+                          В 2014 компания "Cenk Endüstri Tesisleri İmalat Ve
+                          Taahhüt A.Ş", дочерней компанией которой является
+                          "Ченк Рус", завершила строительство градирни серии KMF
+                          40 для компании "Asil Çelik" в г. Бурса, Турция.
+                          Проект выполнен "под ключ", начиная со стадии
+                          разработки объекта до сдачи в эксплуатацию.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="splide" data-splide='{"direction": "ttb", "height": "30rem"}'>
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide">
                             <div class="vertical-slide__right">
                               <img src="./images/img/vertical-slide.png" alt="">
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="splide__slide">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="vertical-slide__left">
-                              <h3 class="title">Воскресенские минеральные удобрения</h3>
-                              <div class="vertical-slide__left-content">
-                                <span>09.04.2022</span>
-                                <p class="description">
-                                  В 2014 компания "Cenk Endüstri Tesisleri İmalat Ve
-                                  Taahhüt A.Ş", дочерней компанией которой является
-                                  "Ченк Рус", завершила строительство градирни серии KMF
-                                  40 для компании "Asil Çelik" в г. Бурса, Турция.
-                                  Проект выполнен "под ключ", начиная со стадии
-                                  разработки объекта до сдачи в эксплуатацию.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
+                          </li>
+                          <li class="splide__slide">
                             <div class="vertical-slide__right">
                               <img src="./images/img/vertical-slide.png" alt="">
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="splide__slide">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="vertical-slide__left">
-                              <h3 class="title">Воскресенские минеральные удобрения</h3>
-                              <div class="vertical-slide__left-content">
-                                <span>09.04.2022</span>
-                                <p class="description">
-                                  В 2014 компания "Cenk Endüstri Tesisleri İmalat Ve
-                                  Taahhüt A.Ş", дочерней компанией которой является
-                                  "Ченк Рус", завершила строительство градирни серии KMF
-                                  40 для компании "Asil Çelik" в г. Бурса, Турция.
-                                  Проект выполнен "под ключ", начиная со стадии
-                                  разработки объекта до сдачи в эксплуатацию.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
+                          </li>
+                          <li class="splide__slide">
                             <div class="vertical-slide__right">
                               <img src="./images/img/vertical-slide.png" alt="">
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                
               </div>
             </section>
             <section class="section-page">
@@ -300,7 +277,7 @@
       </div>
       <div class="row">
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-1.jpg" alt="" />
             </div>
@@ -311,10 +288,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-2.jpg" alt="" />
             </div>
@@ -325,10 +302,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-3.jpg" alt="" />
             </div>
@@ -339,10 +316,10 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 my-4">
-          <div class="articles-item d-flex">
+          <a href="./news-page-child.html" class="articles-item d-flex">
             <div class="articles-item__left">
               <img src="./images/img/item-4.jpg" alt="" />
             </div>
@@ -353,15 +330,15 @@
                 будет описание проекта, где то четерые или пять строк
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="footer-page__certificates">
         <div class="certificates-left">
           <h2 class="title">Сертификаты качества</h2>
-          <div class="certificates-left__item"></div>
-          <div class="certificates-left__item"></div>
-          <div class="certificates-left__item"></div>
+          <a href="./certificats.html" class="certificates-left__item"></a>
+          <a href="./certificats.html" class="certificates-left__item"></a>
+          <a href="./certificats.html" class="certificates-left__item"></a>
         </div>
         <div class="certificates-right">
           <h2 class="title">Каталог оборудование</h2>

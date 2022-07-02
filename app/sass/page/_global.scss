@@ -4,6 +4,21 @@
 }
 .section-page.tech-list {
   margin-bottom: 23px;
+
+    @include respond(lgdsf) {
+      .container {
+        overflow-x: scroll;
+
+        @include respond(mobilemini) {
+          max-width: 100%;
+        }
+
+        & .row {
+          width: 1200px;
+          justify-content: space-between;
+        }
+      }
+    }
 }
 
 .section-page.garant-info {
@@ -14,15 +29,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover img {
+    transform: scale(1.05, 1.05);
+  }
+  &:hover span {
+    color: #206BB0;
+  }
 
   & img {
     flex-shrink: 0;
     margin-bottom: 1rem;
+    object-fit: cover;
+    transition: all 0.3s;
   }
 
   & span {
     text-align: center;
     display: block;
+    color: #000;
+    font-size: 14px;
+    max-width: 170px;
   }
 }
 
@@ -146,9 +178,21 @@
 }
 .btn.btn_grey {
   background: #8e8e8e;
+
+  &:hover {
+    background-color: #000;
+    border: none 0;
+    color: #fff;
+  }
 }
 .btn.btn_green {
   background: #82ba3b;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    border: none 0;
+    box-shadow: none;
+  }
 }
 
 // garant-info
@@ -256,6 +300,11 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   & a {
     color: #ffffff;
@@ -370,20 +419,41 @@
 // catalog-list
 
 .catalog-list {
+  & .catalog-list__item {
+    transition: all 0.3;
+
+    &:hover span {
+      color: #206BB0;
+    }
+  }
   & .tech-list__item {
     border: 1px solid #c4c4c4;
     border-radius: 10px;
     padding: 34px;
     min-height: 30rem;
     margin-bottom: 2rem;
-  }
+    transition: all 0.3;
 
+    & img {
+      transition: all 0.3 ease;
+      object-fit: cover;
+    }
+
+    &:hover {
+      border-color: #206BB0;
+    }
+    &:hover span {
+      color: #206BB0;
+    }
+  }
+  
   & span {
     font-size: 24px;
     line-height: 28px;
     display: block;
     text-align: center;
   }
+
 }
 
 // catalog-tab
@@ -394,6 +464,16 @@
 }
 .catalog-tab__list {
   & .catalog-tab__item {
+
+    & .sub-list__item {
+      position: relative;
+      list-style: disc;
+
+      &::marker {
+        color: #206BB0;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -402,7 +482,7 @@
     font-size: 24px;
     line-height: 28px;
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 .catalog-tab__item.active .sub-list {
@@ -602,7 +682,7 @@
       justify-content: space-between;
       min-width: 209px;
 
-      & span {
+      & button {
         background: #ececec;
         border-radius: 10px;
         width: 36px;
@@ -610,6 +690,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      & .counter {
+        text-align: center;
       }
     }
   }
@@ -624,9 +708,20 @@
   justify-content: space-between;
 }
 .catalog-info__item-child {
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover svg {
+    color: #206BB0;
+  }
+  &:hover span {
+    color: #206BB0;
+  }
   & svg {
     margin-right: 1rem;
     flex-shrink: 0;
+    color: #8E8E8E;
   }
 
   & span {
@@ -751,8 +846,12 @@
 // vertical-slide
 
 .vertical-slide {
-  & .row {
-    // max-width: 1281px;
+  & .splide {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  & .splide__track {
+    padding-right: 76px;
   }
   & .vertical-slide__left {
     & .title {
@@ -777,28 +876,24 @@
     height: inherit;
 
     & img {
-      max-width: 100%;
-      max-height: 100%;
+      height: 100%;
     }
   }
 
   & .splide__arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     & .splide__arrow {
-      left: auto;
-      right: -7rem;
-      top: 0;
       transform: unset;
       background-color: transparent;
+      position: unset;
 
       & svg {
         width: 3rem;
         height: 3rem;
         fill: #222B6C;
       }
-    }
-    & .splide__arrow--next {
-      top: auto;
-      bottom: 0;
     }
   }
 

@@ -2,7 +2,7 @@
   <div class="header-page__inner">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-none d-xxl-flex align-items-center">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#phone"></use>
@@ -20,7 +20,7 @@
             >
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-xxl-4 d-none d-lg-flex">
           <div class="header-page__search">
             <input
               type="text"
@@ -29,7 +29,7 @@
             />
           </div>
         </div>
-        <div class="col-md-4 d-flex align-items-center justify-content-md-end">
+        <div class="col-sm-6 col-xxl-4 d-flex align-items-center justify-content-lg-end">
           <div class="header-page__item">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#person"></use>
@@ -43,21 +43,25 @@
             <span>Опросные листы</span>
           </div>
         </div>
+        <div class="col-sm-6 d-lg-none">
+          <div class="site-hamburger d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="header-page__bottom">
     <div class="container">
-      <div class="row align-items-center justify-content-sm-between">
-        <div class="col-md-3">
-          <!-- <svg width="303" height="66">
-            <use xlink:href="images/icons/sprite.svg#logo"></use>
-          </svg> -->
+      <div class="row align-items-center justify-content-sm-between flex-wrap">
+        <div class="col-sm-6 col-md-3">
           <a href="./index.html" class="site-logo">
             <img src="images/img/logo.svg" alt="">
           </a>
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-6 col-md-9">
           <ul class="navbar-list">
             <li class="navbar-list__item">
               <a href="./about-company.html">О компании</a>
@@ -81,6 +85,18 @@
               <a href="./contact.html">Контакты</a>
             </li>
           </ul>
+          <div class="site-hamburger d-none d-lg-flex d-xxl-none d-flex justify-content-end">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#hamburger"></use>
+            </svg>
+          </div>
+          <div class="header-page__search d-lg-none">
+            <input
+              type="text"
+              class="header-page__input"
+              placeholder="Поиск по сайту"
+            />
+          </div>
         </div>
       </div>
     </div>
