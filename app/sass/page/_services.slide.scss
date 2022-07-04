@@ -2,44 +2,17 @@
     color: #000;
     margin-bottom: 5rem;
 
-    & .splide__slide:not(:last-child) {
-        margin-right: 2rem;
-    }
-
-    & .splide__arrow {
-        background-color: transparent;
-        height: 6rem;
-        width: 6rem;
-
-        &:disabled svg {
-            fill: #fff;
-        }
-
-        & svg {
-            fill: #E2CE19;
-            height: 4rem;
-            width: 4rem;
-        }
-    }
-
-    & .splide__arrow--prev {
-        left: -15rem;
-        top: 85%;
+    & .swiper-button-prev {
+        left: 15%;
+        top: 87%;
 
         @include respond(tabdesk) {
-          top: -12%;
-          bottom: 100%;
-          left: 40%;
-
-          @include respond(mobilemini) {
-            left: 30%;
-            top: -20%;
-          }
+          
         }
     }
-    & .splide__arrow--next {
-        left: -10rem;
-        top: 85%;
+    & .swiper-button-next {
+        left: 25%;
+        top: 87%;
 
         @include respond(tabdesk) {
             top: -12%;

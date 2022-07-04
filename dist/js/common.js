@@ -22,6 +22,7 @@
   try {
 
     let swiper = new Swiper(".services-slide__swiper", {
+      spaceBetween: 30,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
