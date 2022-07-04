@@ -2,6 +2,25 @@
     padding-bottom: 118px;
     background: #F6FCFF;
     padding-top: 5rem;
+
+    @include respond(phone) {
+      padding-bottom: 30px;
+    }
+
+    & .list-block__heading {
+        margin-bottom: 5rem;
+
+        @include respond(tabdesk) {
+          margin-bottom: 7rem;
+        }
+    }
+}
+.list-block__wrapper {
+    margin-bottom: 3rem;
+
+    @include respond(tabdesk) {
+        margin-bottom: 8rem;
+        }
 }
 .list-block__item {
     background: #FFFFFF;
@@ -14,9 +33,28 @@
     height: 100%;
     transition: background 0.2s ease;
 
+    @include respond(desktop) {
+      padding: 28px 60px;
+    }
+
+    @include respond(phone) {
+        padding: 28px 90px;
+    }
+
+    @include respond(mobilemini) {
+      padding-bottom: 11px;
+      padding-top: 70px;
+      padding-right: 11px;
+      padding-left: 11px;
+      text-align: center;
+    }
+
     &::after {
         content: '';
-        background: url(../images/img/quiz-list.png) 0 0 no-repeat;
+        background-image: url(../images/img/quiz-list.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 10px;
         position: absolute;
         opacity: 0;
@@ -30,7 +68,6 @@
 
     &:hover {
         cursor: pointer;
-        // background: url(../images/img/quiz-list.png) center center no-repeat;
     }
 
     &:hover::after {
@@ -58,11 +95,20 @@
     & .title {
         margin-bottom: 1rem;
         max-width: 30rem;
+
+        @include respond(mobilemini) {
+          margin-right: auto;
+          margin-left: auto;
+        }
     }
 
     & .list-block__item-content {
         display: flex;
         align-items: center;
+
+        @include respond(mobilemini) {
+          justify-content: center;
+        }
 
         & .text {
             color: #206BB0;
@@ -87,5 +133,16 @@
         left: -60px;
         top: 10%;
         z-index: 2;
+
+        @include respond(phone) {
+          top: 0;
+        }
+
+        @include respond(mobilemini) {
+          top: 0;
+          left: 50%;
+          margin-top: -60px;
+          margin-left: -60px;
+        }
     }
 }

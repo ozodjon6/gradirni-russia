@@ -8,6 +8,12 @@
     background-size: cover;
     color: #fff;
     margin-bottom: 5rem;
+
+    @include respond(tabdesk) {
+        height: auto;
+        padding: 20px 0 46px;
+        margin-bottom: 2rem;
+    }
 }
 
 .blue-page__heading {
@@ -15,12 +21,15 @@
     text-align: center;
     margin-bottom: 65px;
 
+    @include respond(tabdesk) {
+      margin-bottom: 3rem;
+    }
+
     & .title {
         font-weight: 600;
-        margin-bottom: 1rem;
         position: relative;
         max-width: 371px;
-        margin: 0 auto;
+        margin: 0 auto 1rem;
 
         &::before {
             content: "";
@@ -30,6 +39,10 @@
             height: 1px;
             left: -50%;
             top: 50%;
+
+            @include respond(mobilemini) {
+              display: none;
+            }
         }
         &::after {
             content: "";
@@ -39,6 +52,18 @@
             height: 1px;
             right: -50%;
             top: 50%;
+
+            @include respond(mobilemini) {
+                display: none;
+              }
+        }
+    }
+}
+
+.blue-page__content {
+    @include respond(tabdesk) {
+        & .col-12:not(:last-child) {
+            margin-bottom: 5rem;
         }
     }
 }
@@ -49,8 +74,16 @@
     align-items: center;
     text-align: center;
 
+    @include respond(mobilemini) {
+      width: 50%;
+    }
+
     &:first-child {
         margin-bottom: 5rem;
+
+        @include respond(mobilemini) {
+          margin-bottom: 0;
+        }
     }
 
     & .plus-icon {
@@ -67,5 +100,10 @@
     & .text {
         font-size: 18px;
         line-height: 21px;
+
+        @include respond(mobilemini) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }

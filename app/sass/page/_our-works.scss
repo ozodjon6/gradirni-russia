@@ -21,8 +21,20 @@
 .section-page.our-works_company-page {
     background-color: #fff;
 }
+.our-works__heading {
+    display: flex;
 
+    & .btn {
+        @include respond(mobilemini) {
+          display: none;
+        }
+    }
+}
 .our-works__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 
     & img {
         margin-bottom: 2rem;
@@ -47,4 +59,12 @@
     justify-content: space-between;
     align-items: center;
     min-height: 130px;
+
+    & p {
+        text-align: center;
+    }
+
+    & .btn.btn_white {
+        margin-top: 2rem;
+    }
 }

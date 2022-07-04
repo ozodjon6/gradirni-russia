@@ -1,10 +1,49 @@
 (function () {
-  let elems = document.getElementsByClassName("splide");
+  try {
 
-  for (let i = 0; i < elems.length; i++) {
-    new Splide(elems[i], {}).mount();
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      let swiper = new Swiper(".hero-slide__swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: false,
+      });
+    }
+  } catch {
+    console.log();
   }
 })();
+
+(function () {
+  try {
+
+    let swiper = new Swiper(".services-slide__swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      mousewheel: false,
+    });
+  } catch {
+    console.log();
+  }
+})();
+
+(function () {
+  try {
+
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } catch {
+    console.log();
+  }
+})();
+
+
 
 (function () {
   $(document).ready(function () {
@@ -20,14 +59,20 @@
   });
 })();
 
-function parallax(selector) {
-  var scrolled = $(window).scrollTop();
-  $(selector).css("background-position", "0 " + scrolled * 0.7 + "px");
+
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+  function parallax(selector) {
+    var scrolled = $(window).scrollTop();
+    $(selector).css("background-position", "0 " + scrolled * 0.7 + "px");
+  }
+
+  $(window).scroll(function (e) {
+    parallax(".hero-slide .swiper-slide");
+  });
 }
 
-$(window).scroll(function (e) {
-  parallax(".hero-slide .splide__slide");
-});
+
 
 // swiper
 
@@ -46,6 +91,8 @@ $(window).scroll(function (e) {
   }
 })();
 
+
+
 (function () {
   try {
     let swiper = new Swiper(".scale-slide__wrapper", {
@@ -56,6 +103,8 @@ $(window).scroll(function (e) {
   }
 })();
 
+
+
 // counter
 
 $(document).on("click", ".qty__btn_decr, .qty__btn_incr", function (e) {
@@ -63,8 +112,7 @@ $(document).on("click", ".qty__btn_decr, .qty__btn_incr", function (e) {
   var input = $(this).closest(".qty__inner").find("input");
   if ($(this).hasClass("qty__btn_decr")) {
     var new_val = parseInt(input.val()) - 1;
-  }
-  else if ($(this).hasClass("qty__btn_incr")) {
+  } else if ($(this).hasClass("qty__btn_incr")) {
     var new_val = parseInt(input.val()) + 1;
   }
 

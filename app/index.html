@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradirni Russia</title>
-    <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -59,59 +59,60 @@
               </div>
             </section>
             <section class="section-page hero-slide">
-              <div class="splide" id="slider1">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="container">
-                        <div class="splide__info">
-                          <h2 class="title">
-                            Профессиональный индивидуальный подход
-                          </h2>
-                          <span class="description"
-                            >Проектирование, строительство, реконструкция и
-                            обслуживание градирен с пожизненной гарантией</span
-                          >
-                          <a href="" class="btn">Подробнее</a>
-                        </div>
+              <div class="swiper hero-slide__swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="container">
+                      <div class="splide__info">
+                        <h2 class="title">
+                          Профессиональный индивидуальный подход
+                        </h2>
+                        <span class="description"
+                          >Проектирование, строительство, реконструкция и
+                          обслуживание градирен с пожизненной гарантией</span
+                        >
+                        <a href="" class="btn">Подробнее</a>
                       </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="container">
-                        <div class="splide__info">
-                          <h2 class="title">
-                            Профессиональный индивидуальный подход 2
-                          </h2>
-                          <span class="description"
-                            >Проектирование, строительство, реконструкция и
-                            обслуживание градирен с пожизненной гарантией</span
-                          >
-                          <a href="" class="btn">Подробнее</a>
-                        </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="container">
+                      <div class="splide__info">
+                        <h2 class="title">
+                          Профессиональный индивидуальный подход 2
+                        </h2>
+                        <span class="description"
+                          >Проектирование, строительство, реконструкция и
+                          обслуживание градирен с пожизненной гарантией</span
+                        >
+                        <a href="" class="btn">Подробнее</a>
                       </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="container">
-                        <div class="splide__info">
-                          <h2 class="title">
-                            Профессиональный индивидуальный подход 3
-                          </h2>
-                          <span class="description"
-                            >Проектирование, строительство, реконструкция и
-                            обслуживание градирен с пожизненной гарантией</span
-                          >
-                          <a href="" class="btn">Подробнее</a>
-                        </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="container">
+                      <div class="splide__info">
+                        <h2 class="title">
+                          Профессиональный индивидуальный подход 3
+                        </h2>
+                        <span class="description"
+                          >Проектирование, строительство, реконструкция и
+                          обслуживание градирен с пожизненной гарантией</span
+                        >
+                        <a href="" class="btn">Подробнее</a>
                       </div>
-                    </li>
-                  </ul>
-                </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </section>
             <section class="section-page garant-info">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-7 px-4">
+                  <div class="col-12 col-lg-7 px-4">
                     <div class="garant-info__content">
                       <h2 class="title">
                         Проектирование, строительство, реконструкция и
@@ -167,7 +168,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-5 d-none d-lg-flex">
                     <img src="./images/img/build-img.jpg" alt="" />
                   </div>
                 </div>
@@ -195,16 +196,16 @@
             </section>
             <section class="section-page news-page">
               <div class="container">
-                <div class="row mb-5">
-                  <div class="col-md-6">
+                <div class="row align-items-center mb-5">
+                  <div class="col-6 col-md-6">
                     <h2 class="title">Новости</h2>
                   </div>
-                  <div class="col-md-6 d-flex justify-content-md-end">
+                  <div class="col-6 col-md-6 d-flex justify-content-end">
                     <a href="" class="btn">Все новости</a>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-5 mb-md-0">
                     <div class="our-works__item">
                       <img src="./images/img/works-1.jpg" alt="" />
                       <div class="our-works__content">
@@ -220,7 +221,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-5 mb-md-0">
                     <div class="our-works__item">
                       <img src="./images/img/works-2.jpg" alt="" />
                       <div class="our-works__content">
@@ -238,7 +239,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-5 mb-md-0">
                     <div class="our-works__item">
                       <img src="./images/img/works-3.jpg" alt="" />
                       <div class="our-works__content">
@@ -282,6 +283,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="./js/splide.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/common.js"></script>
 </html>

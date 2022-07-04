@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>General</title>
-    <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -17,7 +17,7 @@
           <header class="header-page">
   <div class="header-page__inner">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-4 d-none d-xxl-flex align-items-center">
           <div class="header-page__item">
             <svg width="20" height="20">
@@ -45,8 +45,8 @@
             />
           </div>
         </div>
-        <div class="col-sm-6 col-xxl-4 d-flex align-items-center justify-content-lg-end">
-          <div class="header-page__item">
+        <div class="col-9 col-sm-9 col-lg-6 col-xxl-4 d-sm-flex align-items-center justify-content-lg-end">
+          <div class="header-page__item mb-3 mb-sm-0">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#person"></use>
             </svg>
@@ -59,7 +59,7 @@
             <span>Опросные листы</span>
           </div>
         </div>
-        <div class="col-sm-6 d-lg-none">
+        <div class="col-3 col-sm-3 d-lg-none">
           <div class="site-hamburger d-xxl-none d-flex justify-content-end">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#hamburger"></use>
@@ -180,7 +180,7 @@
   </div>
   <div class="blue-page__content">
     <div class="row">
-      <div class="col-md-3 d-flex flex-md-column">
+      <div class="col-12 col-md-6 col-lg-3 d-flex flex-md-column">
         <div class="plus-item">
             <div class="plus-icon">
                 <svg width="50" height="50">
@@ -198,7 +198,7 @@
           <span class="text">Европейское качество</span>
         </div>
       </div>
-      <div class="col-md-3 d-flex flex-md-column">
+      <div class="col-12 col-md-6 col-lg-3 d-flex flex-md-column">
         <div class="plus-item">
             <div class="plus-icon">
                 <svg width="50" height="50">
@@ -216,7 +216,7 @@
           <span class="text">Оптимальные сроки реализации проектов</span>
         </div>
       </div>
-      <div class="col-md-3 d-flex flex-md-column">
+      <div class="col-12 col-md-6 col-lg-3 d-flex flex-md-column">
         <div class="plus-item">
             <div class="plus-icon">
                 <svg width="50" height="50">
@@ -234,7 +234,7 @@
           <span class="text">Наличии всей разрешительной документации</span>
         </div>
       </div>
-      <div class="col-md-3 d-flex flex-md-column">
+      <div class="col-12 col-md-6 col-lg-3 d-flex flex-md-column">
         <div class="plus-item">
             <div class="plus-icon">
                 <svg width="50" height="50">
@@ -261,55 +261,58 @@
             <section class="section-page services-slide">
               <div class="container">
                 <div class="row">
-    <div class="col-md-4 px-0">
-        <div class="services-slide__left">
-            <div class="services-slide__item">
-                <h2 class="title">Наши услуги</h2>
-                <span class="description">и как мы работаем ?</span>
-            </div>
-            <div class="services-slide__item d-flex align-items-center">
-                <img src="./images/icons/gradiren.svg" alt="">
-                <span class="description">Обследование и технологические испытания градирен и БОВ</span>
-            </div>
-            <div class="services-slide__item">
-                01
-            </div>
-        </div>
+  <div class="col-12 col-lg-4 px-0">
+    <div class="services-slide__left">
+      <div class="services-slide__item">
+        <h2 class="title">Наши услуги</h2>
+        <span class="description">и как мы работаем ?</span>
+      </div>
+      <div class="services-slide__item d-flex align-items-center">
+        <img src="./images/icons/gradiren.svg" alt="" />
+        <span class="description"
+          >Обследование и технологические испытания градирен и БОВ</span
+        >
+      </div>
+      <div class="services-slide__item">01</div>
     </div>
-    <div class="col-md-8 px-0">
-        <div class="splide">
-            <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide">
-                        <div class="services-slide__right">
-                            <img src="./images/img/services-img.jpg" alt="">
-                        </div>
-                      </li>
-                      <li class="splide__slide">
-                        <div class="services-slide__right">
-                            <img src="./images/img/services-img.jpg" alt="">
-                        </div>
-                      </li>
-                  </ul>
-            </div>
+  </div>
+  <div class="col-12 col-lg-8 px-0">
+    <div class="swiper services-slide__swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="services-slide__right">
+            <img src="./images/img/services-img.jpg" alt="" />
           </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="services-slide__right">
+            <img src="./images/img/services-img.jpg" alt="" />
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+  </div>
 </div>
+
               </div>
             </section>
             <section class="section-page our-works">
               <div class="container">
                 <div class="row mb-5">
-    <div class="col-md-6">
-        <h2 class="title mb-md-3">Наши работы</h2>
-        <span class="description">профессиональный и идивидальные</span>
-    </div>
-    <div class="col-md-6 d-flex justify-content-md-end">
-        <a href="" class="btn">Все проекты</a>
+    <div class="our-works__heading">
+        <div class="col-md-6">
+            <h2 class="title mb-md-3">Наши работы</h2>
+            <span class="description">профессиональный и идивидальные</span>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end">
+            <a href="" class="btn">Все проекты</a>
+        </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 mb-5 mb-md-0">
         <div class="our-works__item">
             <img src="images/img/works-1.jpg" alt="">
             <div class="our-works__content">
@@ -321,7 +324,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 mb-5 mb-md-0">
         <div class="our-works__item">
             <img src="images/img/works-2.jpg" alt="">
             <div class="our-works__content">
@@ -333,7 +336,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 mb-5 mb-md-0">
         <div class="our-works__item">
             <img src="images/img/works-3.jpg" alt="">
             <div class="our-works__content">
@@ -354,11 +357,11 @@
           <div class="footer-page__inner">
   <div class="footer-page__articles">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6">
+      <div class="row align-items-center mb-5">
+        <div class="col-6 col-md-6">
           <h2 class="title">Статьи</h2>
         </div>
-        <div class="col-md-6 d-flex justify-content-md-end">
+        <div class="col-6 col-md-6 d-flex justify-content-md-end">
           <a href="" class="btn">Все статьи</a>
         </div>
       </div>
@@ -552,6 +555,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="./js/splide.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/common.js"></script>
 </html>
