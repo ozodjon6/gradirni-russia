@@ -27,6 +27,7 @@ $porttab: "(min-width:768px) and (max-width: 800px)";
 $landtab: "(min-width:992px) and (max-width: 1199px)";
 $tabdeskonly: "(max-width: 991px)";
 $tabdesk991: "(min-width: 992px)";
+$tabdesk768: "(min-width: 768px)";
 //where desktop begins
 // $deskonly: '(min-width: 1250px) and (max-width:1299px)';
 $deskonly: "(max-width: 1199px)";
@@ -94,6 +95,12 @@ $deskonly: "(max-width: 1199px)";
   }
   @if $breakpoint == tabdesk991 {
     @media #{$tabdesk991} {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tabdesk768 {
+    @media #{$tabdesk768} {
       @content;
     }
   }

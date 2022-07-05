@@ -1,3 +1,12 @@
+.services-slide__swiper {
+  & .swiper-wrapper {
+    & .swiper-slide {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
 .services-slide {
     color: #000;
     margin-bottom: 5rem;

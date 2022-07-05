@@ -10,6 +10,7 @@
     padding-top: 90px;
     @include respond(tabdesk) {
       flex-direction: column;
+      padding-top: 0;
     }
 }
 

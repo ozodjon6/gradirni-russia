@@ -1,5 +1,5 @@
 .section-page.list-block {
-    padding-bottom: 118px;
+    padding-bottom: 88px;
     background: #F6FCFF;
     padding-top: 5rem;
 
@@ -17,13 +17,20 @@
     }
 }
 .list-block__wrapper {
-    &:not(:last-child) {
-      margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
-      @include respond(tabdesk) {
-        margin-bottom: 8rem;
-        }
+  @include respond(tabdesk) {
+    margin-bottom: 8rem;
     }
+
+    @include respond(mobilemini) {
+      margin-bottom: 0;
+    }
+}
+.list-block__wrapper:not(:last-child) {
+  @include respond(mobilemini) {
+    margin-bottom: 8rem;
+  }
 }
 .list-block__item {
     background: #FFFFFF;

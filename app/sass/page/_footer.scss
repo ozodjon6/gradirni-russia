@@ -280,6 +280,34 @@
 }
 .articles-wrapper__swiper {
   & .swiper-wrapper {
+    
+    @include respond(tabdesk768) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-bottom: -30px;
+      width: inherit;
+    }
+    @include respond(tabdesk991) {
+      margin-right: -30px;
+    }
+    
+    & .swiper-slide {
+
+      @include respond(tabdesk768) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+
+      @include respond(tabdesk991) {
+        flex: 0 0 calc((100% - 2*30px)/2);
+        max-width: calc((100% - 2*30px)/2);
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
     @include respond(tabdesk) {
       flex-direction: column;
     }

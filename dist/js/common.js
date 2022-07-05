@@ -18,6 +18,59 @@
   }
 })();
 
+/// tech list swiper
+
+(function () {
+  try {
+  
+    let swiper = new Swiper(".tech-list__swiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        1200: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+        },
+        1400: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+        },
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      let swiper = new Swiper(".tech-list__swiper", {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    }
+  } catch {
+    console.log();
+  }
+})();
+
 (function () {
   try {
 
@@ -105,6 +158,20 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
       spaceBetween: 30,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

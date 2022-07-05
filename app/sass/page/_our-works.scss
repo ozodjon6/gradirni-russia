@@ -82,6 +82,13 @@
     }
 
     & .swiper-slide {
+      width: 31.8%;
+      @include respond(desktop) {
+        width: 31%;
+      }
+      @include respond(tabdesk) {
+        width: 100%;
+      }
       &:not(:last-child) {
         margin-right: 3rem;
 

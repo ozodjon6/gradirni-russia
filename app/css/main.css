@@ -816,6 +816,43 @@ template {
     display: none
   }
 }
+@media (min-width:768px) {
+  .articles-wrapper__swiper .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-bottom: -30px;
+    width: inherit
+  }
+}
+@media (min-width:992px) {
+  .articles-wrapper__swiper .swiper-wrapper {
+    margin-right: -30px
+  }
+}
+@media (min-width:768px) {
+  .articles-wrapper__swiper .swiper-wrapper .swiper-slide {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem
+  }
+}
+@media (min-width:992px) {
+  .articles-wrapper__swiper .swiper-wrapper .swiper-slide {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc((100% - 2*30px)/ 2);
+    flex: 0 0 calc((100% - 2*30px)/ 2);
+    max-width: calc((100% - 2*30px)/ 2);
+    margin-right: 3rem;
+    margin-bottom: 3rem
+  }
+}
 @media (max-width:991px) {
   .articles-wrapper__swiper .swiper-wrapper {
     -webkit-box-orient: vertical;
@@ -1187,6 +1224,10 @@ template {
     line-height: 16px
   }
 }
+.services-slide__swiper .swiper-wrapper .swiper-slide {
+  padding-right: 10px;
+  padding-left: 10px
+}
 .services-slide {
   color: #000;
   margin-bottom: 5rem
@@ -1414,6 +1455,19 @@ template {
     flex-direction: unset
   }
 }
+.our-works__swiper .swiper-wrapper .swiper-slide {
+  width: 31.8%
+}
+@media (max-width:1199px) {
+  .our-works__swiper .swiper-wrapper .swiper-slide {
+    width: 31%
+  }
+}
+@media (max-width:991px) {
+  .our-works__swiper .swiper-wrapper .swiper-slide {
+    width: 100%
+  }
+}
 .our-works__swiper .swiper-wrapper .swiper-slide:not(:last-child) {
   margin-right: 3rem
 }
@@ -1489,7 +1543,7 @@ template {
   margin-top: 2rem
 }
 .section-page.list-block {
-  padding-bottom: 118px;
+  padding-bottom: 88px;
   background: #f6fcff;
   padding-top: 5rem
 }
@@ -1507,10 +1561,20 @@ template {
     text-align: center
   }
 }
-.list-block__wrapper:not(:last-child) {
+.list-block__wrapper {
   margin-bottom: 3rem
 }
 @media (max-width:991px) {
+  .list-block__wrapper {
+    margin-bottom: 8rem
+  }
+}
+@media (max-width:767px) {
+  .list-block__wrapper {
+    margin-bottom: 0
+  }
+}
+@media (max-width:767px) {
   .list-block__wrapper:not(:last-child) {
     margin-bottom: 8rem
   }
@@ -1668,7 +1732,8 @@ template {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    padding-top: 0
   }
 }
 .contact-page__left {
@@ -1955,12 +2020,9 @@ template {
   }
 }
 .section-page.tech-list {
-  margin-bottom: 23px
+  margin-bottom: 30px
 }
 @media (max-width:1399px) {
-  .section-page.tech-list .container {
-    overflow-x: scroll
-  }
   .section-page.tech-list .container::-webkit-scrollbar-thumb {
     background-color: red
   }
@@ -1972,14 +2034,13 @@ template {
 }
 @media (max-width:1399px) {
   .section-page.tech-list .container .row {
-    width: 1200px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
   }
 }
-.section-page.garant-info {
-  padding: 5rem 0
+.tech-list__swiper .swiper-scrollbar {
+  display: none
 }
 @media (max-width:767px) {
   .section-page.garant-info {
@@ -2159,6 +2220,7 @@ template {
   background: #206bb0;
   border-radius: 10px;
   height: 5rem;
+  line-height: 50px;
   text-transform: uppercase;
   min-width: 209px;
   max-width: 209px;
@@ -2317,7 +2379,7 @@ template {
   }
 }
 .section-page.news-page {
-  padding-bottom: 117px;
+  padding-bottom: 50px;
   margin-bottom: 0
 }
 @media (max-width:768px) {
@@ -2325,33 +2387,24 @@ template {
     padding-bottom: 30px
   }
 }
+.news-page .news-page__swiper-scrollbar .swiper-wrapper .swiper-slide {
+  width: 31.8%
+}
+@media (max-width:1199px) {
+  .news-page .news-page__swiper-scrollbar .swiper-wrapper .swiper-slide {
+    width: 31%
+  }
+}
+@media (max-width:991px) {
+  .news-page .news-page__swiper-scrollbar .swiper-wrapper .swiper-slide {
+    width: 100%
+  }
+}
+.news-page .news-page__swiper-scrollbar .swiper-wrapper .swiper-slide:not(:last-child) {
+  margin-right: 3rem
+}
 .news-page .splide__arrows {
   display: none
-}
-.news-page .splide__pagination {
-  counter-reset: pagination-num;
-  top: 100%;
-  margin-top: 5rem
-}
-.news-page .splide__pagination li {
-  font-size: 16px;
-  line-height: 19px;
-  margin-right: 2rem
-}
-.news-page .splide__pagination li .splide__pagination__page:not(.is-active) {
-  background-color: transparent
-}
-.news-page .splide__pagination li .splide__pagination__page.is-active {
-  background: #206bb0;
-  border-radius: 5px;
-  width: 3rem;
-  height: 3rem;
-  color: #fff;
-  margin: 0
-}
-.news-page .splide__pagination__page:before {
-  counter-increment: pagination-num;
-  content: counter(pagination-num)
 }
 .youtube-chanel {
   margin-top: 5rem;
@@ -2364,7 +2417,6 @@ template {
 }
 .youtube-block {
   background: url(../images/img/background-youtube.jpg) center center no-repeat;
-  margin-bottom: 5rem;
   min-height: 166px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2395,6 +2447,35 @@ template {
   display: block;
   margin-top: 1rem;
   text-decoration: underline
+}
+.section-page.news-block {
+  padding-bottom: 117px
+}
+.section-page.news-block .splide__pagination {
+  counter-reset: pagination-num;
+  top: 100%;
+  margin-top: 5rem
+}
+.section-page.news-block .splide__pagination li {
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 2rem
+}
+.section-page.news-block .splide__pagination li .splide__pagination__page:not(.is-active) {
+  background-color: transparent
+}
+.section-page.news-block .splide__pagination li .splide__pagination__page.is-active {
+  background: #206bb0;
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  margin: 0;
+  opacity: 1
+}
+.section-page.news-block .splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num)
 }
 .about-us {
   margin-top: 3rem
@@ -2887,6 +2968,12 @@ template {
 }
 .catalog-tab-child .catalog-tab__list .catalog-tab__item.active a {
   color: #222b6c
+}
+.certificats-page .swiper-slide {
+  width: 328px;
+  height: 400px;
+  background: #c4c4c4;
+  border-radius: 10px
 }
 .swiper-button-next,
 .swiper-button-prev {
