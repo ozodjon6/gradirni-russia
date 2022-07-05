@@ -6,23 +6,29 @@
         left: 15%;
         top: 87%;
 
-        @include respond(tabdesk) {
-          
+        @include respond(phone) {
+          top: 39%;
+          left: 40%;
+        }
+
+        @include respond(mobilemini) {
+          top: 51%;
+          left: 35%;
         }
     }
     & .swiper-button-next {
         left: 25%;
         top: 87%;
 
-        @include respond(tabdesk) {
-            top: -12%;
-            bottom: 100%;
-            left: 52%;
-          }
+        @include respond(phone) {
+          top: 39%;
+          right: 40%;
+          left: auto;
+        }
+
         @include respond(mobilemini) {
-        left: auto;
-        right: 30%;
-        top: -20%;
+          top: 51%;
+          right: 35%;
         }
     }
 

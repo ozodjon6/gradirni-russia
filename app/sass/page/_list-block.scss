@@ -12,15 +12,18 @@
 
         @include respond(tabdesk) {
           margin-bottom: 7rem;
+          text-align: center;
         }
     }
 }
 .list-block__wrapper {
-    margin-bottom: 3rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
 
-    @include respond(tabdesk) {
+      @include respond(tabdesk) {
         margin-bottom: 8rem;
         }
+    }
 }
 .list-block__item {
     background: #FFFFFF;

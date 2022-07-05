@@ -21,6 +21,29 @@
 (function () {
   try {
 
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      let swiper = new Swiper(".news-page__swiper-scrollbar, .articles-wrapper__swiper, .our-works__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    }
+  } catch {
+    console.log();
+  }
+})();
+
+(function () {
+  try {
+
     let swiper = new Swiper(".services-slide__swiper", {
       spaceBetween: 30,
       navigation: {

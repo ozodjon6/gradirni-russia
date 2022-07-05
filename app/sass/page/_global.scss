@@ -208,6 +208,11 @@
   justify-content: center;
   transition: all 0.3s;
 
+  @include respond(mobilemini) {
+    max-width: 100%;
+    width: 100%;
+  }
+
   &:hover {
     cursor: pointer;
     background-color: #fff;
