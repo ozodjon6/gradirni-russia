@@ -28,6 +28,10 @@
     display: flex;
     justify-content: center;
 
+    @include respond(mobilemini) {
+      padding: 20px 20px 0;
+    }
+
         &::after {
             content: "";
             position: absolute;
@@ -42,6 +46,10 @@
             @include respond(tabdesk) {
               height: 100%;
             }
+
+            @include respond(mobilemini) {
+              display: none;
+            }
         }
 }
 .contact-page__left-content {
@@ -52,6 +60,12 @@
     max-width: 375px;
     width: 100%;
 
+    @include respond(mobilemini) {
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
     & .title {
         font-weight: 600;
         font-size: 24px;
@@ -60,6 +74,11 @@
         color: #FFFFFF;
         text-align: left;
         width: 100%;
+
+        @include respond(mobilemini) {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
     }
 
     & .description {
@@ -70,9 +89,30 @@
         color: #FFFFFF;
     }
 
+    & .info-list {
+        @include respond(mobilemini) {
+          margin-bottom: 2rem;
+        }
+    }
+
     & .info-list__item svg {
         color: #fff;
         margin-right: 2rem;
+
+        @include respond(mobilemini) {
+          margin-right: 0;
+        }
+    }
+
+    & .contact-page__person {
+        @include respond(mobilemini) {
+          width: 150px;
+          height: 258px;
+        }
+    }
+
+    & .info-list__item:not(:last-child) {
+        margin-bottom: 1rem;
     }
 }
 

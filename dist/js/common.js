@@ -71,9 +71,37 @@
 
 (function () {
   try {
+    let swiper = new Swiper(".scale-slide__swapper", {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  } catch {
+    console.log();
+  }
+})();
+
+(function () {
+  try {
     if (window.matchMedia("(max-width: 767px)").matches) {
       let swiper = new Swiper(
-        ".news-page__swiper-scrollbar, .articles-wrapper__swiper, .our-works__swiper",
+        ".news-page__swiper-scrollbar, .articles-wrapper__swiper, .our-works__swiper, .specialist__swiper",
         {
           slidesPerView: 1,
           spaceBetween: 10,
@@ -205,41 +233,48 @@ $(document).on("click", ".qty__btn_decr, .qty__btn_incr", function (e) {
 
 // Hamburger active
 
-const siteHamburger = document.querySelectorAll(".site-hamburger");
-const navbarListMobile = document.querySelector(".navbar-list_mobile");
-const closeBtn  = document.querySelector("#close-btn");
-const openPopup = document.querySelectorAll(".header-page__item_open-popup");
-const popupPage = document.querySelector(".popup-page");
-const navOverlay = document.querySelector(".nav-overlay");
-const popupPageClose = document.querySelector(".popup-page__close");
+(function () {
+  try {
+    const siteHamburger = document.querySelectorAll(".site-hamburger");
+    const navbarListMobile = document.querySelector(".navbar-list_mobile");
+    const closeBtn = document.querySelector("#close-btn");
+    const openPopup = document.querySelectorAll(
+      ".header-page__item_open-popup"
+    );
+    const popupPage = document.querySelector(".popup-page");
+    const navOverlay = document.querySelector(".nav-overlay");
+    const popupPageClose = document.querySelector(".popup-page__close");
 
-for(let i = 0; i < siteHamburger.length; i++) {
-  siteHamburger[i].addEventListener("click", function() {
-    navbarListMobile.classList.add("active");
-    document.body.style.position = "fixed";
-  })
-}
+    for (let i = 0; i < siteHamburger.length; i++) {
+      siteHamburger[i].addEventListener("click", function () {
+        navbarListMobile.classList.add("active");
+        document.body.style.position = "fixed";
+      });
+    }
 
-for(let i = 0; i < openPopup.length; i++) {
-  openPopup[i].addEventListener("click", function() {
-    popupPage.classList.add("active");
-    navOverlay.style.display = "block";
-    navOverlay.style.zIndex = "111";
-  })
-}
+    for (let i = 0; i < openPopup.length; i++) {
+      openPopup[i].addEventListener("click", function () {
+        popupPage.classList.add("active");
+        navOverlay.style.display = "block";
+        navOverlay.style.zIndex = "111";
+      });
+    }
 
+    closeBtn.addEventListener("click", function () {
+      navbarListMobile.classList.remove("active");
+      document.body.style.position = "";
+    });
 
-closeBtn.addEventListener("click", function() {
-  navbarListMobile.classList.remove("active");
-  document.body.style.position = "";
-})
+    popupPageClose.addEventListener("click", function () {
+      popupPage.classList.remove("active");
+      navOverlay.style.display = "none";
+    });
 
-popupPageClose.addEventListener("click", function() {
-  popupPage.classList.remove("active");
-  navOverlay.style.display = "none";
-})
-
-navOverlay.addEventListener("click", function() {
-  navOverlay.style.display = "none";
-  popupPage.classList.remove("active");
-})
+    navOverlay.addEventListener("click", function () {
+      navOverlay.style.display = "none";
+      popupPage.classList.remove("active");
+    });
+  } catch {
+    console.log();
+  }
+})();

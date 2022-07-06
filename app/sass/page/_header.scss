@@ -189,6 +189,14 @@
         margin-bottom: 1rem;
       }
     }
+
+    & .col-right {
+      transition: all 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
     
   }
 }
@@ -215,11 +223,17 @@
 }
 
 .site-hamburger {
+  transition: all 0.3s ease;
   & svg {
     @include respond(tabdesk) {
       color: #fff;
     }
   }
+}
+
+.site-hamburger:hover svg {
+  color: #E2CE19;
+  cursor: pointer;
 }
 
 // popup-page
