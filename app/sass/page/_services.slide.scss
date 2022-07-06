@@ -46,6 +46,26 @@
           padding: 0;
       }
     }
+
+    & .swiper-pagination {
+      display: flex;
+      margin-bottom: 43px;
+      margin-left: 92px;
+      font-size: 24px;
+      line-height: 28px;
+      color: #fff;
+      width: auto;
+
+      @include respond(phone) {
+        top: 37%;
+        left: 35%;
+      }
+
+      @include respond(mobilemini) {
+        top: 48%;
+        left: 24%;
+      }
+    }
 }
 
 .services-slide__left {
@@ -111,7 +131,67 @@
                 }
             }
         }
+
+        & .services-slide__counter {
+          font-size: 24px;
+          line-height: 28px;
+        }
     }
+
+    // & .services-slide__item_arrows {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   position: relative;
+
+    //   & .col-right {
+    //     @include respond(tabdesk) {
+    //       display: flex;
+    //       align-items: center;
+    //       justify-content: center;
+    //     }
+    //   }
+
+    //   & span {
+    //     font-size: 24px;
+    //     line-height: 28px;
+
+    //     @include respond(tabdesk) {
+    //       margin-right: 10px;
+    //       margin-left: 10px;
+    //     }
+    //   }
+
+    //   .services-slide__prev {
+    //     right: 40px;
+    //   }
+
+    //   & .services-slide__next {
+    //     transform: rotate(180deg);
+    //     margin-left: 4rem;
+
+    //     @include respond(tabdesk) {
+    //       margin-left: 0;
+    //     }
+    //   }
+
+    //   & .services-slide__arrow {
+    //     color: #E2CE19;
+    //     transition: all 0.3s;
+    //     position: absolute;
+    //     // right: 0;
+
+    //     &:hover {
+    //       cursor: pointer;
+    //     }
+    //   }
+
+    //   & .services-slide__arrow.swiper-button-disabled {
+    //     color: #fff;
+    //   }
+
+      
+    // }
 }
 
 .services-slide__right {

@@ -28,6 +28,10 @@
 
 .section-page.our-works_company-page {
   background-color: #fff;
+
+  & .container {
+    border-bottom: none;
+  }
 }
 .our-works__heading {
   display: flex;
