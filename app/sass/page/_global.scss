@@ -6,6 +6,14 @@
     margin-bottom: 3rem;
   }
 }
+
+.section-page__top-title {
+  & span {
+    &:last-child {
+      color: #222B6C;
+    }
+  }
+}
 .section-page.tech-list {
   margin-bottom: 30px;
 
@@ -274,6 +282,11 @@
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+
+  &:hover {
+    background-color: #206bb0;
+    color: #fff;
+  }
 }
 
 // garant-info
@@ -1481,23 +1494,49 @@
   display: flex;
   align-items: center;
 
+  @include respond(mobilemini) {
+    flex-direction: column;
+  }
+
   & .favorite__left-img {
-      width: 208px;
+      max-width: 208px;
+      width: 100%;
       height: 150px;
       flex-shrink: 0;
       margin-right: 3rem;
+      
+      @include respond(tabdesk) {
+        max-width: 50%;
+        height: 250px;
+      }
+
+      @include respond(mobilemini) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
     
       & img {
         max-width: 100%;
-        max-height: 100%;
+        height: 100%;
+        border-radius: 10px;
       }
+  }
+
+  & .title {
+    font-size: 18px;
+    line-height: 21px;
+
+    @include respond(mobilemini) {
+      text-align: center;
+    }
   }
 
 }
 
 .favorite {
 
-  & .row {
+  & .favorite__item {
     &:not(:last-child) {
       border-bottom: 1px solid #E9E9E9;
       padding-bottom: 20px;
@@ -1515,9 +1554,17 @@
     justify-content: space-between;
     width: 100%;
 
+    @include respond(mobilemini) {
+      flex-direction: column;
+    }
+
     & .catalog-info__item {
       &:not(:last-child) {
         margin-bottom: 0;
+
+        @include respond(mobilemini) {
+          margin-bottom: 2rem;
+        }
       }
 
       & .btn:first-child {
@@ -1529,6 +1576,17 @@
         line-height: 21px;
         max-width: 328px;
         margin-right: 4rem;
+
+        @include respond(mobilemini) {
+          margin-right: 0;
+          text-align: center;
+        }
+      }
+
+      & .btn {
+        @include respond(mobilemini) {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -1543,3 +1601,134 @@
   }
 }
 
+// compare__inner
+.compare {
+  padding-bottom: 20px;
+
+  @include respond(mobilemini) {
+    padding-bottom: 0;
+  }
+}
+
+.compare__inner {
+  & .favorite__left {
+    display: flex;
+    margin-bottom: 15px;
+
+    & .favorite__left-img {
+      @include respond(desktop) {
+        max-width: 60%;
+        height: 200px;
+      }
+
+      @include respond(mobilemini) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    & .title {
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 328px;
+    }
+  }
+
+  & .col-12:first-child {
+    .compare__item {
+      border-right: 2px solid #EEEEEE;
+
+      @include respond(desktop) {
+        margin-bottom: 3rem;
+        border-right: none;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #EEEEEE;
+      }
+
+      @include respond(mobilemini) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  & .catalog-info__content {
+
+    & .order-btn {
+      color: #fff;
+
+      &:hover {
+        color: #000;
+      }
+    }
+    & .catalog-info__item-counter {
+      max-width: 209px;
+      & .counter {
+        width: 50%;
+      }
+    }
+  }
+
+  & .catalog-info__content-body {
+    @include respond(desktop) {
+      display: flex;
+    }
+
+    @include respond(mobilemini) {
+      flex-direction: column;
+    }
+
+    & .catalog-info__item {
+
+      & .title.title_red {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 3rem;
+
+        @include respond(mobilemini) {
+          margin-right: 0;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  & .compare__swiper-arrows {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .swiper-button-next, 
+    & .swiper-button-prev {
+      position: relative;
+      z-index: 100;
+      margin-top: 0;
+      width: 6rem;
+      border-radius: 50%;
+      height: 6rem;
+      background: #206BB0;
+      box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.1);
+      color: #fff;
+    }
+
+    & .swiper-button-prev.swiper-button-disabled,
+    & .swiper-button-next.swiper-button-disabled {
+      background: #FFFFFF;
+      color: #39A2DB;
+      opacity: 1;
+    }
+
+    & .swiper-button-next:after {
+      transform: rotate(-180deg);
+      font-size: 30px;
+    }
+
+    & .swiper-button-prev:after {
+      transform: rotate(180deg);
+      font-size: 30px;
+    }
+  }
+
+  
+}

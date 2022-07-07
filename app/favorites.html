@@ -24,59 +24,77 @@
             </section>
             <section class="section-page favorite">
               <div class="container">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-xl-6 mb-3 mb-xl-0">
-                    <div class="favorite__left">
-                      <div class="favorite__left-img">
-                        <img src="./images/img/favorite.png" alt="" />
-                      </div>
-                      <h3 class="title">
-                        Градирня с противотоком из стеклопластика
-                      </h3>
+                <div class="row mb-5">
+                  <div class="col-md-12 mb-md-5 d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start">
+                    <div class="catalog-tab__heading">
+                      <h3 class="title">Избранное</h3>
                     </div>
                   </div>
-                  <div class="col-xl-6">
-                    <div class="catalog-info__content">
-                      <div class="catalog-info__content-body">
-                        <div class="catalog-info__item">
-                          <h3 class="title title_red">Цена по запросу</h3>
-                          <div class="catalog-info__item-counter qty__inner">
-                            <button class="qty__btn_decr">-</button>
-                            <input class="counter" value="0" type="text" name="quantity"></input>
-                            <button class="qty__btn_incr">+</button>
-                          </div>
-                        </div>
-                        <div class="catalog-info__item">
-                          <a href="" class="btn">заказать</a>
-                        </div>
-                      </div>
+                  <div class="col-md-12 d-none d-md-flex">
+                    <div class="section-page__top-title">
+                      <span>Главная</span>&nbsp; / &nbsp; <span>Избранное</span>
                     </div>
                   </div>
                 </div>
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-xl-6 mb-3 mb-xl-0">
-                    <div class="favorite__left">
-                      <div class="favorite__left-img">
-                        <img src="./images/img/favorite.png" alt="" />
+                <div class="favorite__inner">
+                  <div class="favorite__item">
+                    <div class="row justify-content-xxl-between align-items-xxl-center">
+                      <div class="col-12 col-xxl-6 mb-5 mb-xxl-0">
+                        <div class="favorite__left">
+                          <div class="favorite__left-img">
+                            <img src="./images/img/hero-1.jpg" alt="" />
+                          </div>
+                          <h3 class="title">
+                            Градирня с противотоком из стеклопластика
+                          </h3>
+                        </div>
                       </div>
-                      <h3 class="title">
-                        Градирня с противотоком из стеклопластика
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="catalog-info__content">
-                      <div class="catalog-info__content-body">
-                        <div class="catalog-info__item">
-                          <h3 class="title title_red">Цена по запросу</h3>
-                          <div class="catalog-info__item-counter qty__inner">
-                            <button class="qty__btn_decr">-</button>
-                            <input class="counter" value="0" type="text" name="quantity"></input>
-                            <button class="qty__btn_incr">+</button>
+                      <div class="col-12 col-xxl-6">
+                        <div class="catalog-info__content">
+                          <div class="catalog-info__content-body">
+                            <div class="catalog-info__item">
+                              <h3 class="title title_red">Цена по запросу</h3>
+                              <div class="catalog-info__item-counter qty__inner">
+                                <button class="qty__btn_decr">-</button>
+                                <input class="counter" value="0" type="text" name="quantity"></input>
+                                <button class="qty__btn_incr">+</button>
+                              </div>
+                            </div>
+                            <div class="catalog-info__item">
+                              <a href="" class="btn order-btn">заказать</a>
+                            </div>
                           </div>
                         </div>
-                        <div class="catalog-info__item">
-                          <a href="" class="btn">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="favorite__item">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-xl-6 mb-3 mb-xl-0">
+                        <div class="favorite__left">
+                          <div class="favorite__left-img">
+                            <img src="./images/img/hero-1.jpg" alt="" />
+                          </div>
+                          <h3 class="title">
+                            Градирня с противотоком из стеклопластика
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="catalog-info__content">
+                          <div class="catalog-info__content-body">
+                            <div class="catalog-info__item">
+                              <h3 class="title title_red">Цена по запросу</h3>
+                              <div class="catalog-info__item-counter qty__inner">
+                                <button class="qty__btn_decr">-</button>
+                                <input class="counter" value="0" type="text" name="quantity"></input>
+                                <button class="qty__btn_incr">+</button>
+                              </div>
+                            </div>
+                            <div class="catalog-info__item">
+                              <a href="" class="btn order-btn">заказать</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -98,6 +116,9 @@
       </div>
     </div>
     <!--#include virtual="parts/popup-page.html" -->
+    <!--#include virtual="parts/popup-order.html" -->
+    <!--#include virtual="parts/popup-discount.html" -->
+    <!--#include virtual="parts/popup-centense.html" -->
     <div class="nav-overlay"></div>
   </body>
 

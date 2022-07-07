@@ -16,7 +16,7 @@
       <div class="outer-wrapper">
         <div class="wrapper">
           <header class="header-page">
-  <div class="header-page__inner">
+  <div class="header-page__inner sign-in">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4 d-none d-xxl-flex align-items-center">
@@ -46,7 +46,7 @@
             />
           </div>
         </div>
-        <div class="col-9 col-sm-9 col-lg-6 col-xxl-4 d-sm-flex align-items-center justify-content-lg-end">
+        <div class="col-9 col-sm-9 before-sign-in col-lg-6 col-xxl-4 align-items-center justify-content-lg-end">
           <div class="header-page__item header-page__item_open-popup mb-3 mb-sm-0">
             <svg width="20" height="20">
               <use xlink:href="images/icons/sprite.svg#person"></use>
@@ -58,6 +58,23 @@
               <use xlink:href="images/icons/sprite.svg#quiz"></use>
             </svg>
             <span>Опросные листы</span>
+          </div>
+        </div>
+        <div class="col-9 col-sm-9 after-sign-in col-lg-6 col-xxl-4 align-items-center justify-content-lg-around">
+          <div class="header-page__item">
+            <svg width="20" height="20">
+              <use xlink:href="images/icons/sprite.svg#quiz"></use>
+            </svg>
+            <span>Опросные листы</span>
+          </div>
+          <div class="header-page__item sign-in mb-3 mb-sm-0">
+            <svg width="24" height="24">
+              <use xlink:href="images/icons/sprite.svg#favorite"></use>
+            </svg>
+            <svg width="24" height="24">
+              <use xlink:href="images/icons/sprite.svg#arrow-double"></use>
+            </svg>
+            <span>Выход</span>
           </div>
         </div>
         <div class="col-3 col-sm-3 d-lg-none">
@@ -235,59 +252,77 @@
             </section>
             <section class="section-page favorite">
               <div class="container">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-xl-6 mb-3 mb-xl-0">
-                    <div class="favorite__left">
-                      <div class="favorite__left-img">
-                        <img src="./images/img/favorite.png" alt="" />
-                      </div>
-                      <h3 class="title">
-                        Градирня с противотоком из стеклопластика
-                      </h3>
+                <div class="row mb-5">
+                  <div class="col-md-12 mb-md-5 d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start">
+                    <div class="catalog-tab__heading">
+                      <h3 class="title">Избранное</h3>
                     </div>
                   </div>
-                  <div class="col-xl-6">
-                    <div class="catalog-info__content">
-                      <div class="catalog-info__content-body">
-                        <div class="catalog-info__item">
-                          <h3 class="title title_red">Цена по запросу</h3>
-                          <div class="catalog-info__item-counter qty__inner">
-                            <button class="qty__btn_decr">-</button>
-                            <input class="counter" value="0" type="text" name="quantity"></input>
-                            <button class="qty__btn_incr">+</button>
-                          </div>
-                        </div>
-                        <div class="catalog-info__item">
-                          <a href="" class="btn">заказать</a>
-                        </div>
-                      </div>
+                  <div class="col-md-12 d-none d-md-flex">
+                    <div class="section-page__top-title">
+                      <span>Главная</span>&nbsp; / &nbsp; <span>Избранное</span>
                     </div>
                   </div>
                 </div>
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-xl-6 mb-3 mb-xl-0">
-                    <div class="favorite__left">
-                      <div class="favorite__left-img">
-                        <img src="./images/img/favorite.png" alt="" />
+                <div class="favorite__inner">
+                  <div class="favorite__item">
+                    <div class="row justify-content-xxl-between align-items-xxl-center">
+                      <div class="col-12 col-xxl-6 mb-5 mb-xxl-0">
+                        <div class="favorite__left">
+                          <div class="favorite__left-img">
+                            <img src="./images/img/hero-1.jpg" alt="" />
+                          </div>
+                          <h3 class="title">
+                            Градирня с противотоком из стеклопластика
+                          </h3>
+                        </div>
                       </div>
-                      <h3 class="title">
-                        Градирня с противотоком из стеклопластика
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="catalog-info__content">
-                      <div class="catalog-info__content-body">
-                        <div class="catalog-info__item">
-                          <h3 class="title title_red">Цена по запросу</h3>
-                          <div class="catalog-info__item-counter qty__inner">
-                            <button class="qty__btn_decr">-</button>
-                            <input class="counter" value="0" type="text" name="quantity"></input>
-                            <button class="qty__btn_incr">+</button>
+                      <div class="col-12 col-xxl-6">
+                        <div class="catalog-info__content">
+                          <div class="catalog-info__content-body">
+                            <div class="catalog-info__item">
+                              <h3 class="title title_red">Цена по запросу</h3>
+                              <div class="catalog-info__item-counter qty__inner">
+                                <button class="qty__btn_decr">-</button>
+                                <input class="counter" value="0" type="text" name="quantity"></input>
+                                <button class="qty__btn_incr">+</button>
+                              </div>
+                            </div>
+                            <div class="catalog-info__item">
+                              <a href="" class="btn order-btn">заказать</a>
+                            </div>
                           </div>
                         </div>
-                        <div class="catalog-info__item">
-                          <a href="" class="btn">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="favorite__item">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-xl-6 mb-3 mb-xl-0">
+                        <div class="favorite__left">
+                          <div class="favorite__left-img">
+                            <img src="./images/img/hero-1.jpg" alt="" />
+                          </div>
+                          <h3 class="title">
+                            Градирня с противотоком из стеклопластика
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="catalog-info__content">
+                          <div class="catalog-info__content-body">
+                            <div class="catalog-info__item">
+                              <h3 class="title title_red">Цена по запросу</h3>
+                              <div class="catalog-info__item-counter qty__inner">
+                                <button class="qty__btn_decr">-</button>
+                                <input class="counter" value="0" type="text" name="quantity"></input>
+                                <button class="qty__btn_incr">+</button>
+                              </div>
+                            </div>
+                            <div class="catalog-info__item">
+                              <a href="" class="btn order-btn">заказать</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -531,6 +566,85 @@
                 <input type="password" placeholder="Пароль" class="popup-page__input">
             </label>
             <button type="submit" class="btn">Авторизоваться</button>
+        </form>
+    </div>
+    <div class="popup-page__close">
+        <img src="./images/icons/popup-close.svg" alt="">
+    </div>
+</div>
+    <div class="popup-page popup-page_order">
+    <div class="popup-page__inner">
+        <h3 class="title">Заказать</h3>
+        <form class="popup-page__form">
+            <label class="popup-page__label">
+                <input type="text" placeholder="Введите Ваш имя" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Ваш номер телефона" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="text" placeholder="Ваш почта" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="text" placeholder="Называение Товара" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <textarea cols="30" rows="10" class="popup-page__textarea" placeholder="Комментарий"></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+    <div class="popup-page__close">
+        <img src="./images/icons/popup-close.svg" alt="">
+    </div>
+</div>
+    <div class="popup-page popup-page_discount">
+    <div class="popup-page__inner">
+        <h3 class="title">Получить <strong>скидку</strong> </h3>
+        <form class="popup-page__form">
+            <label class="popup-page__label">
+                <input type="text" placeholder="Введите Ваш имя" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Ваш номер телефона" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Ваш почта" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Называение Товара" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <textarea cols="30" rows="10" class="popup-page__textarea" placeholder="Комментарий"></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+    <div class="popup-page__close">
+        <img src="./images/icons/popup-close.svg" alt="">
+    </div>
+</div>
+    <div class="popup-page popup-page_centense">
+    <div class="popup-page__inner">
+        <h3 class="title">Получить коммерческое
+            предложение</h3>
+        <form class="popup-page__form">
+            <label class="popup-page__label">
+                <input type="text" placeholder="Введите Ваш имя" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Ваш номер телефона" class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Ваш почта" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <input type="number" placeholder="Называение Товара" required class="popup-page__input">
+            </label>
+            <label class="popup-page__label">
+                <textarea cols="30" rows="10" class="popup-page__textarea" placeholder="Комментарий"></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
         </form>
     </div>
     <div class="popup-page__close">
