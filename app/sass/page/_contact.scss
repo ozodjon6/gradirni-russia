@@ -107,7 +107,8 @@
     & .contact-page__person {
         @include respond(mobilemini) {
           width: 150px;
-          height: 258px;
+          max-height: 258px;
+          height: 100%;
         }
     }
 
