@@ -842,25 +842,41 @@
 }
 
 .catalog-tab {
+  & .tab-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 10px;
+
+    @include respond(mobilemini) {
+      flex-wrap: wrap;
+    }
+  }
   & .tab-content {
     height: 100%;
     width: 100%;
+
+    @include respond(mobilemini) {
+      min-height: 270px;
+      max-height: 270px;
+    }
     & .tab-pane {
       @include respond(mobilemini) {
         flex-direction: column;
-        padding: 20px;
+        padding: 0px;
       }
     }
     & .tab-pane.active {
-      background: #efefef;
+      // background: #efefef;
       border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      // display: flex;
+      // align-items: center;
+      // justify-content: flex-start;
       height: 100%;
 
       @include respond(mobilemini) {
-        height: auto;
+        min-height: 270px;
       }
     }
 
@@ -869,41 +885,87 @@
       flex-shrink: 0;
       border-radius: 10px;
       padding: 2rem;
-      height: inherit;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      // width: 50%;
 
       @include respond(mobilemini) {
         width: 100%;
       }
-    }
 
-    & .tab-pane__right {
-      background-color: #efefef;
-      padding: 45px 40px;
-      border-radius: 10px;
-      width: 50%;
-      height: inherit;
+      & .tab-pane__left-item {
+        position: relative;
+        width: 70%;
+        height: 70%;
 
-      @include respond(mobilemini) {
-        width: 100%;
-        text-align: center;
-        padding: 20px 0 0;
-      }
+        @include respond(mobilemini) {
+          // width: 50%;
+          // height: auto;
+        }
 
-      & .tab-pane__right-item {
-        & span,
-        & strong {
+        & .hover-img,
+        & .default-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          display: none;
+
+          &.is-hover {
+            z-index: 100;
+            display: block;
+          }
+        }
+        & .default-img {
           display: block;
         }
-        &:first-child {
-          margin-bottom: 3rem;
+        
+      }
+    }
+  }
+
+  & .tab-pane__right {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+    @include respond(mobilemini) {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0 0;
+    }
+
+    & .tab-pane__right-item {
+      &:first-child {
+        margin-bottom: 3rem;
+      }
+
+      & .tab-pane__right-grid {
+        transition: all 0.3s ease;
+
+        & a {
+          color: #000000;
+        }
+        &:hover {
+          cursor: pointer;
+
+          & a {
+            text-shadow: 0px 0px 1px #000;
+          }
         }
       }
     }
   }
+}
+.tab-pane__right .tab-pane__right-grid:hover + .tab-content .tab-pane {
+  background-color: #113CFC;
 }
 
 // catalog-tab__info

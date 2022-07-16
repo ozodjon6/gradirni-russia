@@ -91,6 +91,10 @@
           slidesPerView: 5,
         },
       },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   } catch {
     console.log();
@@ -335,4 +339,56 @@ $(document).on("click", ".qty__btn_decr, .qty__btn_incr", function (e) {
   } catch {
     console.log();
   }
+})();
+
+
+// hover add class catalog page
+
+(function () {
+
+  $(".tab-pane__left-item .hover-img").each(function (index, item) {
+    $(item).addClass("row-" + index)
+  })
+
+  $('.tab-pane__left-item').each(function (index, item) {
+    $(item).find('.hover-img').each(function (index, item) {
+      $(item).addClass("row-" + index)
+    })
+  })
+
+  $(".tab-pane__right-grid a").each(function (index, item) {
+    $(item).addClass("row-" + index)
+  })
+
+  $('.tab-pane__right-item').each(function (index, item) {
+    $(item).find('.tab-pane__right-grid a').each(function (index, item) {
+      $(item).addClass("row-" + index)
+    })
+  })
+
+
+
+  $(".tab-wrapper").on("mouseenter", ".tab-pane__right-grid a", function () {
+
+    var $this = $(this);
+    var classes = $this.attr("class").split(" ");
+    var rowClass = classes[classes.length - 1];
+    $(".default-img").css({
+      display: "none"
+    })
+    $("." + rowClass).addClass("is-hover").siblings().removeClass("is-hover")
+    
+
+  })
+
+  $(".tab-wrapper").on("mouseleave", ".tab-pane__right-grid a", function () {
+    var $this = $(this);
+    var classes = $this.attr("class").split(" ");
+    var rowClass = classes[classes.length - 1];
+    $(".default-img").css({
+      display: "block"
+    })
+    $("." + rowClass).removeClass("is-hover");
+  })
+
 })();
