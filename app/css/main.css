@@ -3363,19 +3363,42 @@ template {
   .scale-slide__inner .swiper-slide.swiper-slide-active {
     -webkit-transform: none;
     -ms-transform: none;
-    transform: none
+    transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 .scale-slide__swapper {
-  max-height: 300px
+  max-height: 300px;
+  height: 100%
+}
+@media (max-width:767px) {
+  .scale-slide__swapper {
+    margin-top: 24px
+  }
 }
 .scale-slide__swapper .swiper-wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
 }
+.scale-slide__swapper .swiper-wrapper .minimized {
+  border-radius: 10px
+}
 .scale-slide__swapper .swiper-scrollbar {
   background: #c4c4c4
+}
+@media (max-width:767px) {
+  .scale-slide__swapper .swiper-scrollbar {
+    bottom: 0
+  }
 }
 .scale-slide__swapper .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: #206bb0
@@ -4180,6 +4203,9 @@ template {
   max-width: 90%;
   height: auto;
   z-index: 9999
+}
+#magnify img {
+  border-radius: 10px
 }
 #close-popup {
   width: 4rem;

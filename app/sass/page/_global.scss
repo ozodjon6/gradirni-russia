@@ -1034,6 +1034,9 @@
 
     @include respond(mobilemini) {
       transform: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -1041,12 +1044,25 @@
 
 .scale-slide__swapper {
   max-height: 300px;
+  height: 100%;
+
+  @include respond(mobilemini) {
+    margin-top: 24px;
+  }
   & .swiper-wrapper {
     align-items: center;
+    
+    & .minimized {
+      border-radius: 10px;
+    }
   }
 
   & .swiper-scrollbar {
     background: #C4C4C4;
+
+    @include respond(mobilemini) {
+      bottom: 0;
+    }
     & .swiper-scrollbar-drag {
       background-color: #206BB0;
     }
@@ -1817,6 +1833,10 @@
   max-width: 90%;
   height: auto;
   z-index: 9999;
+
+  & img {
+    border-radius: 10px;
+  }
 }
 
 #close-popup {
