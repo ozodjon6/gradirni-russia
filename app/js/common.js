@@ -72,10 +72,9 @@
 (function () {
   try {
     let swiper = new Swiper(".scale-slide__swapper", {
-      slidesPerView: 5,
-      spaceBetween: 0,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
+      // slidesPerView: 1,
+      // spaceBetween: 20,
+      loop: true,
       breakpoints: {
         0: {
           slidesPerView: 1,
@@ -83,12 +82,6 @@
             el: ".swiper-scrollbar",
           },
           spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 5,
         },
       },
       navigation: {
