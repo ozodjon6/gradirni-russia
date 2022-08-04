@@ -3387,13 +3387,14 @@ template {
   -ms-flex-align: center;
   align-items: center
 }
-.scale-slide__swapper .swiper-wrapper .minimized {
+.scale-slide__swapper .swiper-wrapper img {
   border-radius: 10px;
   width: 100%;
-  max-height: 100%
+  max-height: 100%;
+  height: 100%
 }
 @media (max-width:991px) {
-  .scale-slide__swapper .swiper-wrapper .minimized {
+  .scale-slide__swapper .swiper-wrapper img {
     height: 195px
   }
 }
@@ -4239,5 +4240,17 @@ template {
   display: block;
   height: 100%;
   width: 100%
+}
+.lb-dataContainer {
+  display: none!important
+}
+.lb-container {
+  height: inherit
+}
+.lb-nav a.lb-prev {
+  left: 30px
+}
+.lb-nav a.lb-next {
+  right: 30px
 }
 /*# sourceMappingURL=app/css/main.css.map */

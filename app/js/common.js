@@ -72,8 +72,7 @@
 (function () {
   try {
     let swiper = new Swiper(".scale-slide__swapper", {
-      // slidesPerView: 1,
-      // spaceBetween: 20,
+      slidesPerView: 4,
       loop: true,
       breakpoints: {
         0: {
@@ -83,6 +82,14 @@
           },
           spaceBetween: 10,
         },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 32,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 32,
+        }
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -413,3 +420,5 @@ $(function () {
     });
   });
 });
+
+// ajaximagepreview
