@@ -1860,6 +1860,10 @@ template {
 }
 .list-block__item {
   background: #fff;
+  background-image: none;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid #cfd8dc;
   border-radius: 10px;
   padding: 42px 42px 42px 90px;
@@ -1867,9 +1871,9 @@ template {
   width: 86%;
   position: relative;
   height: 100%;
-  -webkit-transition: background .2s ease;
-  -o-transition: background .2s ease;
-  transition: background .2s ease
+  -webkit-transition: background-image .3s ease;
+  -o-transition: background-image .3s ease;
+  transition: background-image .3s ease
 }
 @media (max-width:1199px) {
   .list-block__item {
@@ -1890,29 +1894,8 @@ template {
     text-align: center
   }
 }
-.list-block__item::after {
-  content: '';
-  background-image: url(../images/img/quiz-list.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  -webkit-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  transition: all .6s ease
-}
 .list-block__item:hover {
   cursor: pointer
-}
-.list-block__item:hover::after {
-  opacity: 1
 }
 .list-block__item:hover .title {
   color: #fff;
@@ -1996,6 +1979,9 @@ template {
     margin-top: -60px;
     margin-left: -60px
   }
+}
+.list-block__item.active:hover::after {
+  opacity: 1
 }
 .section-page.contact-page {
   margin-bottom: 0

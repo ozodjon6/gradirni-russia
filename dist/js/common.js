@@ -421,4 +421,17 @@ $(function () {
   });
 });
 
-// ajaximagepreview
+// at Hover list blok on hover
+
+let arrImage = ['image-1.png', 'image-2.png', 'image-3.png', 'image-4.png'];
+let wrapItem = document.querySelectorAll('.list-block__item');
+
+for(let i = 0; i < wrapItem.length; i++) {
+    wrapItem[i].onmouseover = function() {
+        wrapItem[i].style.backgroundImage = Boolean(arrImage[i]) ? `url(images/${arrImage[i]})` : `url(images/${arrImage[0]})`
+    }
+
+    wrapItem[i].onmouseout = function() {
+        wrapItem[i].style.backgroundImage = ''
+    }
+}
